@@ -1,0 +1,880 @@
+/* ============================================
+   ИНТЕРАКТИВНА ПЕРИОДИЧНА ТАБЛИЦА - CSS SKELETON
+   ============================================
+   
+   Този файл съдържа основната структура.
+   Вашата задача е да попълните липсващите стилове
+   според инструкциите за всяка седмица.
+*/
+
+/* ============================================
+   СЕДМИЦА 3: TODO - CSS ПРОМЕНЛИВИ
+   ============================================
+   Инструкции за :root секция:
+   
+   Създайте CSS променливи за цветове:
+   --bg-dark: #0a0e27
+   --bg-card: #1a1f3a
+   --bg-hover: #2a2f4a
+   --text-primary: #ffffff
+   --text-secondary: #b8c1ec
+   --accent-blue: #4f6aff
+   --accent-purple: #8b5cf6
+   --accent-green: #10b981
+   --accent-red: #ef4444
+   --border-color: #2d3561
+   
+   Цветове за категории:
+   --nonmetal: #ff6b9d
+   --metal: #fbbf24
+   --metalloid: #a78bfa
+   --noble-gas: #60a5fa
+   --alkali: #f97316
+   --alkaline: #84cc16
+*/
+
+/* TODO: Създайте :root с променливи тук */
+
+
+
+
+/* ============================================
+   СЕДМИЦА 3: TODO - RESET СТИЛОВЕ
+   ============================================
+   Инструкции за * селектор:
+   - margin: 0
+   - padding: 0
+   - box-sizing: border-box
+*/
+
+/* TODO: Добавете reset стилове тук */
+
+
+
+
+/* ============================================
+   СЕДМИЦА 3: TODO - BODY СТИЛОВЕ
+   ============================================
+   Инструкции за body:
+   - font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+   - background: linear-gradient(135deg, var(--bg-dark) 0%, #1a1f3a 100%)
+   - color: var(--text-primary)
+   - min-height: 100vh
+   - padding: 20px
+   - line-height: 1.6
+*/
+
+/* TODO: Добавете body стилове тук */
+
+
+
+
+/* ============================================
+   СЕДМИЦА 3: TODO - CONTAINER
+   ============================================
+   Инструкции за .container:
+   - max-width: 1400px
+   - margin: 0 auto
+*/
+
+/* TODO: Добавете .container стилове тук */
+
+
+
+
+/* ============================================
+   СЕДМИЦА 3: TODO - HEADER СТИЛОВЕ
+   ============================================
+   Инструкции за header:
+   - text-align: center
+   - margin-bottom: 30px
+   - padding: 30px
+   - background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple))
+   - border-radius: 20px
+   - box-shadow: 0 10px 40px rgba(79, 106, 255, 0.3)
+*/
+
+/* TODO: Добавете header стилове тук */
+
+
+
+
+/* Инструкции за header h1:
+   - font-size: 2.5rem
+   - margin-bottom: 10px
+   - text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3)
+*/
+
+/* TODO: Добавете header h1 стилове тук */
+
+
+
+
+/* Инструкции за .subtitle:
+   - font-size: 1.1rem
+   - opacity: 0.9
+*/
+
+/* TODO: Добавете .subtitle стилове тук */
+
+
+
+
+/* ============================================
+   СЕДМИЦА 3: TODO - КОНТРОЛИ
+   ============================================
+   Инструкции за .controls:
+   - display: flex
+   - gap: 20px
+   - margin-bottom: 30px
+   - flex-wrap: wrap
+   - background: var(--bg-card)
+   - padding: 20px
+   - border-radius: 15px
+   - border: 1px solid var(--border-color)
+*/
+
+/* TODO: Добавете .controls стилове тук */
+
+
+
+
+/* Инструкции за .filter-section и .search-section:
+   - display: flex
+   - flex-direction: column
+   - gap: 8px
+*/
+
+/* TODO: Добавете .filter-section и .search-section стилове тук */
+
+
+
+
+/* Инструкции за label във filter-section и search-section:
+   - font-size: 0.9rem
+   - color: var(--text-secondary)
+*/
+
+/* TODO: Добавете label стилове тук */
+
+
+
+
+/* Инструкции за select и input[type="text"]:
+   - padding: 10px 15px
+   - border: 2px solid var(--border-color)
+   - border-radius: 8px
+   - background: var(--bg-dark)
+   - color: var(--text-primary)
+   - font-size: 1rem
+   - transition: all 0.3s ease
+*/
+
+/* TODO: Добавете select и input стилове тук */
+
+
+
+
+/* СЕДМИЦА 10: TODO - Focus ефект за select и input
+   Инструкции за :focus:
+   - outline: none
+   - border-color: var(--accent-blue)
+   - box-shadow: 0 0 0 3px rgba(79, 106, 255, 0.2)
+*/
+
+/* TODO: Добавете :focus стилове тук */
+
+
+
+
+/* Инструкции за .stats:
+   - display: flex
+   - align-items: center
+   - margin-left: auto
+   - padding: 10px 20px
+   - background: var(--bg-dark)
+   - border-radius: 8px
+   - border: 1px solid var(--border-color)
+*/
+
+/* TODO: Добавете .stats стилове тук */
+
+
+
+
+/* Инструкции за .stats strong:
+   - color: var(--accent-green)
+   - margin: 0 5px
+*/
+
+/* TODO: Добавете .stats strong стилове тук */
+
+
+
+
+/* ============================================
+   СЕДМИЦА 4: TODO - ПЕРИОДИЧНА ТАБЛИЦА (GRID)
+   ============================================
+   Инструкции за .periodic-table:
+   - display: grid
+   - grid-template-columns: repeat(18, 1fr)
+   - gap: 8px
+   - margin-bottom: 40px
+   - padding: 20px
+   - background: var(--bg-card)
+   - border-radius: 15px
+   - border: 1px solid var(--border-color)
+*/
+
+/* TODO: Добавете .periodic-table стилове тук */
+
+
+
+
+/* ============================================
+   СЕДМИЦА 4: TODO - ЕЛЕМЕНТИ КАРТИ
+   ============================================
+   Инструкции за .element:
+   - aspect-ratio: 1
+   - background: var(--bg-dark)
+   - border: 2px solid var(--border-color)
+   - border-radius: 8px
+   - padding: 8px
+   - cursor: pointer
+   - transition: all 0.3s ease
+   - display: flex
+   - flex-direction: column
+   - justify-content: center
+   - align-items: center
+   - position: relative
+   - overflow: hidden
+*/
+
+/* TODO: Добавете .element стилове тук */
+
+
+
+
+/* СЕДМИЦА 10: TODO - Hover ефект за .element
+   Инструкции за .element:hover:
+   - transform: translateY(-5px) scale(1.05)
+   - box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5)
+   - z-index: 10
+*/
+
+/* TODO: Добавете .element:hover стилове тук */
+
+
+
+
+/* Инструкции за .element.hidden:
+   - display: none
+*/
+
+/* TODO: Добавете .element.hidden стилове тук */
+
+
+
+
+/* Инструкции за .element-number:
+   - font-size: 0.7rem
+   - opacity: 0.7
+   - position: absolute
+   - top: 4px
+   - left: 4px
+*/
+
+/* TODO: Добавете .element-number стилове тук */
+
+
+
+
+/* Инструкции за .element-symbol:
+   - font-size: 1.5rem
+   - font-weight: bold
+   - margin: 5px 0
+*/
+
+/* TODO: Добавете .element-symbol стилове тук */
+
+
+
+
+/* Инструкции за .element-name:
+   - font-size: 0.65rem
+   - opacity: 0.8
+   - text-align: center
+*/
+
+/* TODO: Добавете .element-name стилове тук */
+
+
+
+
+/* Инструкции за .element-mass:
+   - font-size: 0.6rem
+   - opacity: 0.6
+   - margin-top: 2px
+*/
+
+/* TODO: Добавете .element-mass стилове тук */
+
+
+
+
+/* ============================================
+   СЕДМИЦА 4: TODO - КАТЕГОРИИ ЦВЕТОВЕ
+   ============================================
+   Инструкции за .element.nonmetal:
+   - border-color: var(--nonmetal)
+   - background: linear-gradient(135deg, var(--bg-dark), rgba(255, 107, 157, 0.15))
+   
+   Подобни стилове за:
+   .element.metal (--metal)
+   .element.metalloid (--metalloid)
+   .element.noble-gas (--noble-gas)
+   .element.alkali (--alkali)
+   .element.alkaline (--alkaline)
+*/
+
+/* TODO: Добавете .element.nonmetal стилове тук */
+
+
+
+
+/* TODO: Добавете .element.metal стилове тук */
+
+
+
+
+/* TODO: Добавете .element.metalloid стилове тук */
+
+
+
+
+/* TODO: Добавете .element.noble-gas стилове тук */
+
+
+
+
+/* TODO: Добавете .element.alkali стилове тук */
+
+
+
+
+/* TODO: Добавете .element.alkaline стилове тук */
+
+
+
+
+/* ============================================
+   СЕДМИЦА 6: TODO - ДЕТАЙЛИ ЗА ЕЛЕМЕНТ
+   ============================================
+   Инструкции за .element-details:
+   - background: var(--bg-card)
+   - border: 1px solid var(--border-color)
+   - border-radius: 15px
+   - padding: 30px
+   - margin-bottom: 40px
+   - position: relative
+*/
+
+/* TODO: Добавете .element-details стилове тук */
+
+
+
+
+/* Инструкции за .close-btn:
+   - position: absolute
+   - top: 15px
+   - right: 15px
+   - background: var(--accent-red)
+   - color: white
+   - border: none
+   - border-radius: 50%
+   - width: 35px
+   - height: 35px
+   - font-size: 1.5rem
+   - cursor: pointer
+   - transition: all 0.3s ease
+   - display: flex
+   - align-items: center
+   - justify-content: center
+*/
+
+/* TODO: Добавете .close-btn стилове тук */
+
+
+
+
+/* СЕДМИЦА 10: TODO - Hover за .close-btn
+   - background: #dc2626
+   - transform: rotate(90deg)
+*/
+
+/* TODO: Добавете .close-btn:hover стилове тук */
+
+
+
+
+/* Инструкции за .element-details h2:
+   - color: var(--accent-blue)
+   - margin-bottom: 20px
+   - font-size: 2rem
+*/
+
+/* TODO: Добавете .element-details h2 стилове тук */
+
+
+
+
+/* Инструкции за .detail-grid:
+   - display: grid
+   - grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+   - gap: 15px
+   - margin-bottom: 20px
+*/
+
+/* TODO: Добавете .detail-grid стилове тук */
+
+
+
+
+/* Инструкции за .detail-item:
+   - background: var(--bg-dark)
+   - padding: 15px
+   - border-radius: 8px
+   - border: 1px solid var(--border-color)
+*/
+
+/* TODO: Добавете .detail-item стилове тук */
+
+
+
+
+/* Инструкции за .detail-label:
+   - display: block
+   - font-size: 0.85rem
+   - color: var(--text-secondary)
+   - margin-bottom: 5px
+*/
+
+/* TODO: Добавете .detail-label стилове тук */
+
+
+
+
+/* Инструкции за .detail-value:
+   - display: block
+   - font-size: 1.2rem
+   - font-weight: bold
+   - color: var(--accent-blue)
+*/
+
+/* TODO: Добавете .detail-value стилове тук */
+
+
+
+
+/* Инструкции за .detail-description:
+   - background: var(--bg-dark)
+   - padding: 20px
+   - border-radius: 8px
+   - border-left: 4px solid var(--accent-blue)
+   - line-height: 1.8
+*/
+
+/* TODO: Добавете .detail-description стилове тук */
+
+
+
+
+/* ============================================
+   СЕДМИЦА 9: TODO - ВИКТОРИНА СТИЛОВЕ
+   ============================================
+   Инструкции за .quiz-section:
+   - background: var(--bg-card)
+   - border: 1px solid var(--border-color)
+   - border-radius: 15px
+   - padding: 30px
+   - margin-bottom: 40px
+*/
+
+/* TODO: Добавете .quiz-section стилове тук */
+
+
+
+
+/* Инструкции за .quiz-section h2:
+   - color: var(--accent-purple)
+   - margin-bottom: 20px
+*/
+
+/* TODO: Добавете .quiz-section h2 стилове тук */
+
+
+
+
+/* Инструкции за .btn-primary:
+   - background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple))
+   - color: white
+   - border: none
+   - padding: 15px 40px
+   - border-radius: 10px
+   - font-size: 1.1rem
+   - font-weight: bold
+   - cursor: pointer
+   - transition: all 0.3s ease
+   - box-shadow: 0 5px 15px rgba(79, 106, 255, 0.3)
+*/
+
+/* TODO: Добавете .btn-primary стилове тук */
+
+
+
+
+/* СЕДМИЦА 10: TODO - Hover за .btn-primary
+   - transform: translateY(-2px)
+   - box-shadow: 0 8px 25px rgba(79, 106, 255, 0.4)
+*/
+
+/* TODO: Добавете .btn-primary:hover стилове тук */
+
+
+
+
+/* Инструкции за .quiz-game:
+   - margin-top: 20px
+*/
+
+/* TODO: Добавете .quiz-game стилове тук */
+
+
+
+
+/* Инструкции за .quiz-header:
+   - display: flex
+   - justify-content: space-between
+   - margin-bottom: 20px
+   - padding: 15px
+   - background: var(--bg-dark)
+   - border-radius: 8px
+   - font-size: 1.1rem
+*/
+
+/* TODO: Добавете .quiz-header стилове тук */
+
+
+
+
+/* Инструкции за .quiz-content h3:
+   - text-align: center
+   - margin-bottom: 20px
+   - color: var(--accent-blue)
+*/
+
+/* TODO: Добавете .quiz-content h3 стилове тук */
+
+
+
+
+/* Инструкции за .element-display:
+   - display: flex
+   - justify-content: center
+   - margin: 30px 0
+*/
+
+/* TODO: Добавете .element-display стилове тук */
+
+
+
+
+/* Инструкции за .element-card:
+   - background: var(--bg-dark)
+   - border: 3px solid var(--accent-blue)
+   - border-radius: 12px
+   - padding: 30px
+   - width: 200px
+   - text-align: center
+   - box-shadow: 0 10px 30px rgba(79, 106, 255, 0.3)
+*/
+
+/* TODO: Добавете .element-card стилове тук */
+
+
+
+
+/* Инструкции за .element-card .element-number:
+   - position: static
+   - font-size: 1rem
+   - margin-bottom: 10px
+*/
+
+/* TODO: Добавете .element-card .element-number стилове тук */
+
+
+
+
+/* Инструкции за .element-card .element-symbol:
+   - font-size: 3rem
+   - margin: 15px 0
+   - color: var(--accent-blue)
+*/
+
+/* TODO: Добавете .element-card .element-symbol стилове тук */
+
+
+
+
+/* Инструкции за .element-card .element-name:
+   - font-size: 1rem
+   - opacity: 1
+*/
+
+/* TODO: Добавете .element-card .element-name стилове тук */
+
+
+
+
+/* Инструкции за .quiz-options:
+   - display: grid
+   - grid-template-columns: repeat(2, 1fr)
+   - gap: 15px
+   - margin: 30px 0
+*/
+
+/* TODO: Добавете .quiz-options стилове тук */
+
+
+
+
+/* Инструкции за .quiz-option:
+   - background: var(--bg-dark)
+   - border: 2px solid var(--border-color)
+   - padding: 20px
+   - border-radius: 10px
+   - cursor: pointer
+   - transition: all 0.3s ease
+   - text-align: center
+   - font-size: 1.1rem
+*/
+
+/* TODO: Добавете .quiz-option стилове тук */
+
+
+
+
+/* СЕДМИЦА 10: TODO - Hover за .quiz-option
+   - border-color: var(--accent-blue)
+   - background: var(--bg-hover)
+   - transform: translateY(-2px)
+*/
+
+/* TODO: Добавете .quiz-option:hover стилове тук */
+
+
+
+
+/* Инструкции за .quiz-option.correct:
+   - border-color: var(--accent-green)
+   - background: rgba(16, 185, 129, 0.2)
+*/
+
+/* TODO: Добавете .quiz-option.correct стилове тук */
+
+
+
+
+/* Инструкции за .quiz-option.incorrect:
+   - border-color: var(--accent-red)
+   - background: rgba(239, 68, 68, 0.2)
+*/
+
+/* TODO: Добавете .quiz-option.incorrect стилове тук */
+
+
+
+
+/* Инструкции за .quiz-feedback:
+   - text-align: center
+   - padding: 20px
+   - border-radius: 10px
+   - margin-top: 20px
+   - font-size: 1.2rem
+   - font-weight: bold
+*/
+
+/* TODO: Добавете .quiz-feedback стилове тук */
+
+
+
+
+/* Инструкции за .quiz-feedback.correct:
+   - background: rgba(16, 185, 129, 0.2)
+   - color: var(--accent-green)
+   - border: 2px solid var(--accent-green)
+*/
+
+/* TODO: Добавете .quiz-feedback.correct стилове тук */
+
+
+
+
+/* Инструкции за .quiz-feedback.incorrect:
+   - background: rgba(239, 68, 68, 0.2)
+   - color: var(--accent-red)
+   - border: 2px solid var(--accent-red)
+*/
+
+/* TODO: Добавете .quiz-feedback.incorrect стилове тук */
+
+
+
+
+/* ============================================
+   СЕДМИЦА 10: TODO - ЛЕГЕНДА
+   ============================================
+   Инструкции за .legend:
+   - background: var(--bg-card)
+   - border: 1px solid var(--border-color)
+   - border-radius: 15px
+   - padding: 20px
+*/
+
+/* TODO: Добавете .legend стилове тук */
+
+
+
+
+/* Инструкции за .legend h3:
+   - margin-bottom: 15px
+   - color: var(--accent-blue)
+*/
+
+/* TODO: Добавете .legend h3 стилове тук */
+
+
+
+
+/* Инструкции за .legend-items:
+   - display: flex
+   - flex-wrap: wrap
+   - gap: 15px
+*/
+
+/* TODO: Добавете .legend-items стилове тук */
+
+
+
+
+/* Инструкции за .legend-item:
+   - display: flex
+   - align-items: center
+   - gap: 8px
+*/
+
+/* TODO: Добавете .legend-item стилове тук */
+
+
+
+
+/* Инструкции за .legend-box:
+   - width: 30px
+   - height: 30px
+   - border-radius: 5px
+   - border: 2px solid
+*/
+
+/* TODO: Добавете .legend-box стилове тук */
+
+
+
+
+/* Инструкции за legend-box категории:
+   Използвайте същите цветове като за елементите
+   
+   .legend-box.nonmetal:
+   - background: rgba(255, 107, 157, 0.3)
+   - border-color: var(--nonmetal)
+   
+   Подобни за: metal, metalloid, noble-gas, alkali, alkaline
+*/
+
+/* TODO: Добавете .legend-box.nonmetal стилове тук */
+
+
+
+
+/* TODO: Добавете .legend-box.metal стилове тук */
+
+
+
+
+/* TODO: Добавете .legend-box.metalloid стилове тук */
+
+
+
+
+/* TODO: Добавете .legend-box.noble-gas стилове тук */
+
+
+
+
+/* TODO: Добавете .legend-box.alkali стилове тук */
+
+
+
+
+/* TODO: Добавете .legend-box.alkaline стилове тук */
+
+
+
+
+/* ============================================
+   СЕДМИЦА 10: TODO - RESPONSIVE ДИЗАЙН
+   ============================================
+   Инструкции за @media (max-width: 1200px):
+   
+   .periodic-table:
+   - grid-template-columns: repeat(9, 1fr)
+*/
+
+/* TODO: Добавете media query за 1200px тук */
+
+
+
+
+/* Инструкции за @media (max-width: 768px):
+   
+   .periodic-table:
+   - grid-template-columns: repeat(6, 1fr)
+   
+   .controls:
+   - flex-direction: column
+   
+   .stats:
+   - margin-left: 0
+   
+   header h1:
+   - font-size: 1.8rem
+*/
+
+/* TODO: Добавете media query за 768px тук */
+
+
+
+
+/* Инструкции за @media (max-width: 480px):
+   
+   .periodic-table:
+   - grid-template-columns: repeat(4, 1fr)
+   - gap: 5px
+   
+   .element:
+   - padding: 5px
+   
+   .element-symbol:
+   - font-size: 1.2rem
+*/
+
+/* TODO: Добавете media query за 480px тук */

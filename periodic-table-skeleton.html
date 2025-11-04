@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интерактивна Периодична Таблица</title>
+    
+    <!-- 
+    ============================================
+    СЕДМИЦА 2: TODO - Свържете CSS файла
+    ============================================
+    Инструкции:
+    1. Добавете <link> таг за CSS файла
+    2. rel="stylesheet"
+    3. href="periodic-table.css"
+    -->
+    
+    <!-- TODO: Свържете CSS файла тук -->
+    
+    
+</head>
+<body>
+    <div class="container">
+        
+        <!-- 
+        ============================================
+        СЕДМИЦА 2: TODO - HEADER СЕКЦИЯ
+        ============================================
+        Инструкции:
+        1. Създайте <header> елемент
+        2. Вътре създайте <h1> с текст "🧪 Интерактивна Периодична Таблица"
+        3. Създайте <p> с class="subtitle" и текст "Изучавай химичните елементи играйки"
+        -->
+        
+        <!-- TODO: Добавете header тук -->
+        
+        
+        
+        
+        <!-- 
+        ============================================
+        СЕДМИЦА 2: TODO - КОНТРОЛЕН ПАНЕЛ
+        ============================================
+        Инструкции за .controls div:
+        1. Създайте div с class="controls"
+        2. Вътре създайте 3 секции:
+        
+        А) ФИЛТЪР СЕКЦИЯ:
+        - div с class="filter-section"
+        - label с текст "Филтър по тип:"
+        - select с id="filterType"
+        - option value="all" - "Всички елементи"
+        - option value="nonmetal" - "Неметали"
+        - option value="metal" - "Метали"
+        - option value="metalloid" - "Металоиди"
+        - option value="noble-gas" - "Благородни газове"
+        - option value="alkali" - "Алкални метали"
+        - option value="alkaline" - "Алкалоземни метали"
+        
+        Б) ТЪРСЕНЕ СЕКЦИЯ:
+        - div с class="search-section"
+        - label с текст "Търсене:"
+        - input type="text" id="searchInput" placeholder="Име или символ..."
+        
+        В) СТАТИСТИКИ:
+        - div с class="stats"
+        - span с текст "Показани: "
+        - strong id="visibleCount" с текст "0"
+        - span с текст " / 118"
+        -->
+        
+        <!-- TODO: Добавете controls панел тук -->
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <!-- 
+        ============================================
+        СЕДМИЦА 5: TODO - ПЕРИОДИЧНА ТАБЛИЦА
+        ============================================
+        Инструкции:
+        1. Създайте div с class="periodic-table"
+        2. Добавете id="periodicTable"
+        3. Този div ще се попълни с JavaScript
+        -->
+        
+        <!-- TODO: Добавете periodic-table div тук -->
+        
+        
+        
+        <!-- 
+        ============================================
+        СЕДМИЦА 6: TODO - ДЕТАЙЛИ ЗА ЕЛЕМЕНТ
+        ============================================
+        Инструкции за .element-details секция:
+        1. Създайте div с:
+           - class="element-details"
+           - id="elementDetails"
+        
+        2. Вътре създайте:
+           - button с class="close-btn" id="closeDetails" текст: &times;
+           - h2 с id="detailName" текст: "Изберете елемент"
+        
+        3. Създайте div с class="detail-grid" и вътре 6 detail-item div-а:
+        
+           Item 1:
+           - span class="detail-label" текст: "Атомен номер:"
+           - span class="detail-value" id="detailNumber" текст: "-"
+           
+           Item 2:
+           - span class="detail-label" текст: "Символ:"
+           - span class="detail-value" id="detailSymbol" текст: "-"
+           
+           Item 3:
+           - span class="detail-label" текст: "Атомна маса:"
+           - span class="detail-value" id="detailMass" текст: "-"
+           
+           Item 4:
+           - span class="detail-label" текст: "Категория:"
+           - span class="detail-value" id="detailCategory" текст: "-"
+           
+           Item 5:
+           - span class="detail-label" текст: "Период:"
+           - span class="detail-value" id="detailPeriod" текст: "-"
+           
+           Item 6:
+           - span class="detail-label" текст: "Група:"
+           - span class="detail-value" id="detailGroup" текст: "-"
+        
+        4. След detail-grid създайте:
+           - div с class="detail-description" id="detailDescription"
+           - текст: "Изберете елемент от таблицата за да видите детайли."
+        -->
+        
+        <!-- TODO: Добавете element-details секция тук -->
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <!-- 
+        ============================================
+        СЕДМИЦА 9: TODO - ВИКТОРИНА СЕКЦИЯ
+        ============================================
+        Инструкции за .quiz-section:
+        1. Създайте div с class="quiz-section"
+        2. h2 с текст "🎮 Режим Викторина"
+        3. button с:
+           - id="startQuiz"
+           - class="btn-primary"
+           - текст: "Започни викторина"
+        
+        4. div с:
+           - class="quiz-game"
+           - id="quizGame"
+           - style="display: none;"
+        
+        5. Вътре в quiz-game създайте:
+        
+        А) QUIZ HEADER:
+        - div class="quiz-header"
+        - span с текст "Въпрос "
+        - span id="quizQuestion" текст "1"
+        - span с текст " / 10"
+        - span с текст "Точки: "
+        - span id="quizScore" текст "0"
+        
+        Б) QUIZ CONTENT:
+        - div class="quiz-content"
+        - h3 id="quizPrompt" текст "Какъв е символът на този елемент?"
+        
+        В) ELEMENT DISPLAY:
+        - div class="element-display" id="quizElementDisplay"
+        - вътре div class="element-card":
+          * div class="element-number" id="quizElementNumber" текст "1"
+          * div class="element-symbol" id="quizElementSymbol" текст "H"
+          * div class="element-name" id="quizElementName" текст "Водород"
+        
+        Г) OPTIONS И FEEDBACK:
+        - div class="quiz-options" id="quizOptions"
+        - div class="quiz-feedback" id="quizFeedback"
+        -->
+        
+        <!-- TODO: Добавете quiz-section тук -->
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <!-- 
+        ============================================
+        СЕДМИЦА 10: TODO - ЛЕГЕНДА
+        ============================================
+        Инструкции за .legend:
+        1. Създайте div с class="legend"
+        2. h3 с текст "Легенда:"
+        3. div с class="legend-items"
+        4. Вътре създайте 6 legend-item span-a:
+        
+        Item 1: Неметали
+        - span class="legend-item"
+        - span class="legend-box nonmetal"
+        - текст: " Неметали"
+        
+        Item 2: Метали
+        - span class="legend-item"
+        - span class="legend-box metal"
+        - текст: " Метали"
+        
+        Item 3: Металоиди
+        - span class="legend-item"
+        - span class="legend-box metalloid"
+        - текст: " Металоиди"
+        
+        Item 4: Благородни газове
+        - span class="legend-item"
+        - span class="legend-box noble-gas"
+        - текст: " Благородни газове"
+        
+        Item 5: Алкални метали
+        - span class="legend-item"
+        - span class="legend-box alkali"
+        - текст: " Алкални метали"
+        
+        Item 6: Алкалоземни метали
+        - span class="legend-item"
+        - span class="legend-box alkaline"
+        - текст: " Алкалоземни метали"
+        -->
+        
+        <!-- TODO: Добавете legend секция тук -->
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </div>
+
+    <!-- 
+    ============================================
+    СЕДМИЦА 5: TODO - Свържете JavaScript файла
+    ============================================
+    Инструкции:
+    1. Добавете <script> таг
+    2. src="periodic-table.js"
+    -->
+    
+    <!-- TODO: Свържете JavaScript файла тук -->
+    
+    
+</body>
+</html>
