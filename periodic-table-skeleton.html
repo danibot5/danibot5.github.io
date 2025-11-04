@@ -71,28 +71,29 @@
         -->
         
         <!-- TODO: Добавете controls панел тук -->
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+        <div class="controls">
+            <div class="filter-section">
+               <label for="">Филтър по тип:</label>
+               <select name="" id="filterType">
+                  <option value="all">Всички елементи</option>
+                  <option value="nonmetal">Неметали</option>
+                  <option value="metal">Метали</option>
+                  <option value="metalloid">Металоиди</option>
+                  <option value="noble-gas">Благородни газове</option>
+                  <option value="alkali">Алкални метали</option>
+                  <option value="alkaline">Алкалоземни метали</option>
+               </select>
+            </div>
+            <div class="search-section">
+               <label for="">Търсене:</label>
+               <input type="text" id="searchInput" placeholder="Име или символ...">
+            </div>
+            <div class="stats">
+               <span>Показани: </span>
+               <strong id="visibleCount">0</strong>
+               <span> / 118</span>
+            </div>
+         </div>
         
         <!-- 
         ============================================
