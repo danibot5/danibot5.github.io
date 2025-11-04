@@ -50,17 +50,13 @@ Score display
 Restart option
 
 📂 Folder Structure
-📁 project
- ┣ 📁 assets
- ┃ ┗ images/
- ┣ 📁 data
- ┃ ┗ elements.js
+📁 Екип Периодична Система
+ ┣ 📁 html
+ ┃ ┗ periodic-table-skeleton.html
  ┣ 📁 css
- ┃ ┗ style.css
+ ┃ ┗ periodic-table-skeleton.css
  ┣ 📁 js
- ┃ ┣ script.js
- ┃ ┗ quiz.js
- ┣ index.html
+ ┃ ┗ periodic-table-skeleton.js
  ┗ README.md
 
 🧠 How to Run
@@ -68,7 +64,6 @@ Restart option
 git clone https://github.com/your-repo-link
 
 2️⃣ Open in browser
-
 Just open index.html in any browser.
 
 3️⃣ Or view online
@@ -99,7 +94,6 @@ https://yourusername.github.io/periodic-table/
  Deployment (final step)
 
 📅 Development Workflow
-
 Weekly sprint updates
 
 Daily mini stand-ups in Discord
@@ -134,4 +128,4 @@ Debugging & testing
 
 Project planning & leadership
 
-We worked as a real dev team — Kanban, PRs, reviews, stand-ups. 👊
+We worked as a real dev team 👊
