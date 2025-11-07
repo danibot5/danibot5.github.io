@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="bg">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Интерактивна Периодична Таблица</title>
-    
-    <!-- 
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Интерактивна Периодична Таблица</title>
+
+   <!-- 
     ============================================
     СЕДМИЦА 2: TODO - Свържете CSS файла
     ============================================
@@ -14,15 +15,16 @@
     2. rel="stylesheet"
     3. href="periodic-table.css"
     -->
-    
-    <!-- TODO: Свържете CSS файла тук -->
-    <link rel="stylesheet" href="periodic-table-skeleton.css">
-    
+
+   <!-- TODO: Свържете CSS файла тук -->
+   <link rel="stylesheet" href="periodic-table-skeleton.css">
+
 </head>
+
 <body>
-    <div class="container">
-        
-        <!-- 
+   <div class="container">
+
+      <!-- 
         ============================================
         СЕДМИЦА 2: TODO - HEADER СЕКЦИЯ
         ============================================
@@ -31,14 +33,14 @@
         2. Вътре създайте <h1> с текст "🧪 Интерактивна Периодична Таблица"
         3. Създайте <p> с class="subtitle" и текст "Изучавай химичните елементи играйки"
         -->
-        
-        <!-- TODO: Добавете header тук -->
-        <header>
+
+      <!-- TODO: Добавете header тук -->
+      <header>
          <h1>🧪 Интерактивна Периодична Таблица</h1>
          <p class="subtitle">Изучавай химичните елементи играйки</p>
-        </header>
+      </header>
 
-        <!-- 
+      <!-- 
         ============================================
         СЕДМИЦА 2: TODO - КОНТРОЛЕН ПАНЕЛ
         ============================================
@@ -69,33 +71,33 @@
         - strong id="visibleCount" с текст "0"
         - span с текст " / 118"
         -->
-        
-        <!-- TODO: Добавете controls панел тук -->
-        <div class="controls">
-            <div class="filter-section">
-               <label for="">Филтър по тип:</label>
-               <select name="" id="filterType">
-                  <option value="all">Всички елементи</option>
-                  <option value="nonmetal">Неметали</option>
-                  <option value="metal">Метали</option>
-                  <option value="metalloid">Металоиди</option>
-                  <option value="noble-gas">Благородни газове</option>
-                  <option value="alkali">Алкални метали</option>
-                  <option value="alkaline">Алкалоземни метали</option>
-               </select>
-            </div>
-            <div class="search-section">
-               <label for="">Търсене:</label>
-               <input type="text" id="searchInput" placeholder="Име или символ...">
-            </div>
-            <div class="stats">
-               <span>Показани: </span>
-               <strong id="visibleCount">0</strong>
-               <span> / 118</span>
-            </div>
+
+      <!-- TODO: Добавете controls панел тук -->
+      <div class="controls">
+         <div class="filter-section">
+            <label for="">Филтър по тип:</label>
+            <select name="" id="filterType">
+               <option value="all">Всички елементи</option>
+               <option value="nonmetal">Неметали</option>
+               <option value="metal">Метали</option>
+               <option value="metalloid">Металоиди</option>
+               <option value="noble-gas">Благородни газове</option>
+               <option value="alkali">Алкални метали</option>
+               <option value="alkaline">Алкалоземни метали</option>
+            </select>
          </div>
-        
-        <!-- 
+         <div class="search-section">
+            <label for="">Търсене:</label>
+            <input type="text" id="searchInput" placeholder="Име или символ...">
+         </div>
+         <div class="stats">
+            <span>Показани: </span>
+            <strong id="visibleCount">0</strong>
+            <span> / 118</span>
+         </div>
+      </div>
+
+      <!-- 
         ============================================
          СЕДМИЦА 5: TODO - ПЕРИОДИЧНА ТАБЛИЦА
         ============================================
@@ -104,11 +106,11 @@
         2. Добавете id="periodicTable"
         3. Този div ще се попълни с JavaScript
         -->
-      
-        <!-- TODO: Добавете periodic-table div тук -->
-         <div class="periodic-table" id="periodicTable"></div>
-        
-        <!-- 
+
+      <!-- TODO: Добавете periodic-table div тук -->
+      <div class="periodic-table" id="periodicTable"></div>
+
+      <!-- 
         ============================================
         СЕДМИЦА 6: TODO - ДЕТАЙЛИ ЗА ЕЛЕМЕНТ
         ============================================
@@ -151,47 +153,87 @@
            - div с class="detail-description" id="detailDescription"
            - текст: "Изберете елемент от таблицата за да видите детайли."
         -->
-        
-        <!-- TODO: Добавете element-details секция тук -->
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <!-- 
+
+      <!-- TODO: Добавете element-details секция тук -->
+      <div class="element-details" id="elementDetails">
+         <button class="close-btn" id="closeDetails">&times;</button>
+         <h2 id="detailName">Изберете елемент</h2>
+
+         <div class="detail-grid">
+            <div class="detail-item">
+               <span class="detail-label">Атомен номер:</span>
+               <span class="detail-value" id="detailNumber">-</span>
+            </div>
+
+            <div class="detail-item">
+               <span class="detail-label">Символ:</span>
+               <span class="detail-value" id="detailSymbol">-</span>
+            </div>
+
+            <div class="detail-item">
+               <span class="detail-label">Атомна маса:</span>
+               <span class="detail-value" id="detailMass">-</span>
+            </div>
+
+            <div class="detail-item">
+               <span class="detail-label">Категория:</span>
+               <span class="detail-value" id="detailCategory">-</span>
+            </div>
+
+            <div class="detail-item">
+               <span class="detail-label">Период:</span>
+               <span class="detail-value" id="detailPeriod">-</span>
+            </div>
+
+            <div class="detail-item">
+               <span class="detail-label">Група:</span>
+               <span class="detail-value" id="detailGroup">-</span>
+            </div>
+         </div>
+
+         <div class="detail-description" id="detailDescription">
+            Изберете елемент от таблицата за да видите детайли.
+         </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- 
         ============================================
         СЕДМИЦА 9: TODO - ВИКТОРИНА СЕКЦИЯ
         ============================================
@@ -233,52 +275,52 @@
         - div class="quiz-options" id="quizOptions"
         - div class="quiz-feedback" id="quizFeedback"
         -->
-        
-        <!-- TODO: Добавете quiz-section тук -->
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <!-- 
+
+      <!-- TODO: Добавете quiz-section тук -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- 
         ============================================
         СЕДМИЦА 10: TODO - ЛЕГЕНДА
         ============================================
@@ -318,44 +360,44 @@
         - span class="legend-box alkaline"
         - текст: " Алкалоземни метали"
         -->
-        
-        <!-- TODO: Добавете legend секция тук -->
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-    </div>
 
-    <!-- 
+      <!-- TODO: Добавете legend секция тук -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   </div>
+
+   <!-- 
     ============================================
     СЕДМИЦА 5: TODO - Свържете JavaScript файла
     ============================================
@@ -363,9 +405,10 @@
     1. Добавете <script> таг
     2. src="periodic-table.js"
     -->
-    
-    <!-- TODO: Свържете JavaScript файла тук -->
-    
-    
+
+   <!-- TODO: Свържете JavaScript файла тук -->
+
+
 </body>
+
 </html>
