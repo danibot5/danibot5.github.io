@@ -34,6 +34,25 @@
 */
 
 /* TODO: Създайте :root с променливи тук */
+:root {
+   --bg-dark: #0a0e27;
+   --bg-card: #1a1f3a;
+   --bg-hover: #2a2f4a;
+   --text-primary: #ffffff;
+   --text-secondary: #b8c1ec;
+   --accent-blue: #4f6aff;
+   --accent-purple: #8b5cf6;
+   --accent-green: #10b981;
+   --accent-red: #ef4444;
+   --border-color: #2d3561;
+
+   --nonmetal: #ff6b9d;
+   --metal: #fbbf24;
+   --metalloid: #a78bfa;
+   --noble-gas: #60a5fa;
+   --alkali: #f97316;
+   --alkaline: #84cc16;
+}
 
 
 
@@ -48,6 +67,12 @@
 */
 
 /* TODO: Добавете reset стилове тук */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
 
 
 
@@ -65,6 +90,14 @@
 */
 
 /* TODO: Добавете body стилове тук */
+body {
+   font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   background: linear-gradient(135deg, var(--bg-dark) 0% #1a1f3a 100%);
+   color: var(--text-primary);
+   min-height: 100vh;
+   padding: 20px;
+   line-height: 1.6;
+}
 
 
 
@@ -78,6 +111,11 @@
 */
 
 /* TODO: Добавете .container стилове тук */
+.container {
+   max-width: 1400px;
+   margin: 0 auto;
+}
+
 
 
 
@@ -95,7 +133,14 @@
 */
 
 /* TODO: Добавете header стилове тук */
-
+header {
+   text-align: center;
+   margin-bottom: 30px;
+   padding: 30px;
+   background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
+   border-radius: 20px;
+   box-shadow: 0 10px 40px rgba(79, 106, 255, 0.3);
+}
 
 
 
@@ -106,6 +151,11 @@
 */
 
 /* TODO: Добавете header h1 стилове тук */
+header h1 {
+   font-size: 2.5rem;
+   margin-bottom: 10px;
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
 
 
 
@@ -116,7 +166,10 @@
 */
 
 /* TODO: Добавете .subtitle стилове тук */
-
+.subtitle {
+   font-size: 1.1rem;
+   opacity: 0.9;
+}
 
 
 
