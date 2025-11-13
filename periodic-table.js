@@ -30,7 +30,7 @@ console.log("🧪 Периодичната таблица се зарежда...
     description: 'Текст...'     // Описание
 }
 
-Категории: 'nonmetal', 'metal', 'metalloid', 'noble-gas', 'alkali', 'alkaline'
+Категории: 'nonmetal', 'transitionmetal', 'post-transitionmetal', 'metalloid', 'noble-gas', 'alkali', 'alkaline', 'actinide', 'lanthanide'.
 
 Примери за първите 3 елемента:
 - H (Водород): number: 1, row: 1, col: 1, category: 'nonmetal'
