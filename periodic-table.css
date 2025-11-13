@@ -26,11 +26,14 @@
    
    Цветове за категории:
    --nonmetal: #ff6b9d
-   --metal: #fbbf24
+   --transitionmetal: #fffc4a
+   --post-transitionmetal: #e0a100
    --metalloid: #a78bfa
    --noble-gas: #60a5fa
    --alkali: #f97316
    --alkaline: #84cc16
+   --lanthanide: #00ffff
+   --actinide: #00670c
 */
 
 /* TODO: Създайте :root с променливи тук */
@@ -47,11 +50,15 @@
    --border-color: #2d3561;
 
    --nonmetal: #ff6b9d;
-   --metal: #fbbf24;
-   --metalloid: #a78bfa;
+   --halogen: #ff004c;
+   --transitionmetal: #fffc4a;
+   --post-transitionmetal: #e0a100;
+   --metalloid: #9375eb;
    --noble-gas: #60a5fa;
-   --alkali: #f97316;
-   --alkaline: #84cc16;
+   --alkali: #f95e16;
+   --alkaline: #9dee08;
+   --lanthanide: #00ffff;
+   --actinide: #00670c;
 }
 
 

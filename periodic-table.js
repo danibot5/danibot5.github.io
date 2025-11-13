@@ -219,8 +219,8 @@ console.log("✅ DOM елементите са свързани");
    elementDiv.className = 'element ' + element.category;
 
 5. Задайте Grid позиция:
-   elementDiv.style.gridRow = element.row;
-   elementDiv.style.gridColumn = element.col;
+   elementDiv.style.gridRow = element.position.row;
+   elementDiv.style.gridColumn = element.position.col;
 
 6. Задайте dataset атрибути:
    elementDiv.dataset.number = element.number;
@@ -292,11 +292,6 @@ function renderPeriodicTable() {
    // TODO: Добавете към periodicTableEl
 
 
-
-
-   // TODO: Обновете видимия брой
-
-
    console.log("✅ Таблицата е рендерирана");
 }
 
@@ -321,8 +316,11 @@ function renderPeriodicTable() {
        case 'nonmetal':
            detailCategory.textContent = 'Неметал';
            break;
-       case 'metal':
-           detailCategory.textContent = 'Метал';
+       case 'transitionmetal':
+           detailCategory.textContent = 'Преходен метал';
+           break;
+       case 'transitionmetal':
+           detailCategory.textContent = 'Следпреходен метал';
            break;
        // ... останалите категории
    }
