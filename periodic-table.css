@@ -338,10 +338,13 @@ header h1 {
 
 /* Инструкции за .element-number:
    - font-size: 0.7rem
-   - opacity: 0.7
+   - opacity: 0.75
    - position: absolute
-   - top: 4px
-   - left: 4px
+   - top: 0
+   - left: 0
+   - padding: 0 2.5px
+   - color: white
+   - text-shadow: 1px 1px 2px black
 */
 
 /* TODO: Добавете .element-number стилове тук */
@@ -352,7 +355,6 @@ header h1 {
 /* Инструкции за .element-symbol:
    - font-size: 1.5rem
    - font-weight: bold
-   - margin: 5px 0
 */
 
 /* TODO: Добавете .element-symbol стилове тук */
@@ -361,9 +363,11 @@ header h1 {
 
 
 /* Инструкции за .element-name:
-   - font-size: 0.65rem
-   - opacity: 0.8
+   - font-size: 0.62rem
+   - opacity: 0.85
    - text-align: center
+   - margin-bottom: 1.5px;
+   -transform: translateY(-2.5px);
 */
 
 /* TODO: Добавете .element-name стилове тук */
@@ -373,8 +377,8 @@ header h1 {
 
 /* Инструкции за .element-mass:
    - font-size: 0.6rem
-   - opacity: 0.6
-   - margin-top: 2px
+   - opacity: 0.75
+   - margin-top: -3px
 */
 
 /* TODO: Добавете .element-mass стилове тук */
