@@ -353,8 +353,9 @@ header h1 {
 
 
 /* Инструкции за .element-symbol:
-   - font-size: 1.5rem
+   - font-size: 1.3rem
    - font-weight: bold
+   - margin: -1px 0;
 */
 
 /* TODO: Добавете .element-symbol стилове тук */
@@ -394,11 +395,15 @@ header h1 {
    - background: linear-gradient(135deg, var(--bg-dark), rgba(255, 107, 157, 0.15))
    
    Подобни стилове за:
-   .element.metal (--metal)
+   .element.transitionmetal (--transitionmetal)
+   .element.post-transitionmetal (--post-transitionmetal)
    .element.metalloid (--metalloid)
    .element.noble-gas (--noble-gas)
    .element.alkali (--alkali)
    .element.alkaline (--alkaline)
+   .element.lanthanide (--lanthanide)
+   .element.halogen (--halogen)
+   .element.actinide (--actinide);
 */
 
 /* TODO: Добавете .element.nonmetal стилове тук */
@@ -406,7 +411,12 @@ header h1 {
 
 
 
-/* TODO: Добавете .element.metal стилове тук */
+/* TODO: Добавете .element.transitionmetal стилове тук */
+
+
+
+
+/* TODO: Добавете .element.post-transitionmetal стилове тук */
 
 
 
@@ -427,6 +437,21 @@ header h1 {
 
 
 /* TODO: Добавете .element.alkaline стилове тук */
+
+
+
+
+/* TODO: Добавете .element.lanthanide стилове тук */
+
+
+
+/* TODO: Добавете .element.halogen стилове тук */
+
+
+
+
+/* TODO: Добавете .element.actinide стилове тук */
+
 
 
 
@@ -861,7 +886,7 @@ header h1 {
    - background: rgba(255, 107, 157, 0.3)
    - border-color: var(--nonmetal)
    
-   Подобни за: metal, metalloid, noble-gas, alkali, alkaline
+   Подобни за: transitionmetal, post-transitionmetal, metalloid, noble-gas, alkali, alkaline, halogen, lanthanide, actinide
 */
 
 /* TODO: Добавете .legend-box.nonmetal стилове тук */
@@ -869,7 +894,12 @@ header h1 {
 
 
 
-/* TODO: Добавете .legend-box.metal стилове тук */
+/* TODO: Добавете .legend-box.transitionmetal стилове тук */
+
+
+
+
+/* TODO: Добавете .legend-box.post-transitionmetal стилове тук */
 
 
 
@@ -890,6 +920,22 @@ header h1 {
 
 
 /* TODO: Добавете .legend-box.alkaline стилове тук */
+
+
+
+
+/* TODO: Добавете .legend-box.halogen стилове тук */
+
+
+
+
+/* TODO: Добавете .legend-box.lanthanide стилове тук */
+
+
+
+
+/* TODO: Добавете .legend-box.actinide стилове тук */
+
 
 
 

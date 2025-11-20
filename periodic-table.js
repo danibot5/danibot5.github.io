@@ -319,7 +319,7 @@ function renderPeriodicTable() {
        case 'transitionmetal':
            detailCategory.textContent = 'Преходен метал';
            break;
-       case 'transitionmetal':
+       case 'post-transitionmetal':
            detailCategory.textContent = 'Следпреходен метал';
            break;
        // ... останалите категории
@@ -990,6 +990,33 @@ function resetQuiz() {
 // СЕДМИЦА 8: TODO - EVENT LISTENERS
 // ============================================
 
+/* Инструкции за функция closeElementDetails():
+ 
+1. Взимане на id:
+   document.getElementById('detailName').textContent = 'Изберете елемент';
+   document.getElementById('detailNumber').textContent = '-';
+   document.getElementById('detailSymbol').textContent = '-';
+   document.getElementById('detailMass').textContent = '-';
+   document.getElementById('detailCategory').textContent = '-';
+   document.getElementById('detailPeriod').textContent = '-';
+   document.getElementById('detailGroup').textContent = '-';
+   document.getElementById('detailDescription').textContent = 
+   'Изберете елемент от таблицата за да видите детайли.';
+*/
+
+function closeElementDetails() {
+   // TODO: Добавете кода за функцията тук
+
+
+
+
+
+
+
+
+
+}
+
 /*
 Инструкции за функция attachEventListeners():
 
@@ -1007,7 +1034,8 @@ function resetQuiz() {
 
 3. Затваряне на детайли:
    closeDetailsBtn.addEventListener('click', function() {
-       elementDetailsEl.scrollIntoView({ behavior: 'smooth' });
+      closeElementDetails();
+      elementDetailsEl.scrollIntoView({ behavior: 'smooth' });
    });
 
 4. Старт на викторина:
