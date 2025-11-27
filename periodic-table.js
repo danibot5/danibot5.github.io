@@ -217,8 +217,8 @@ console.log("✅ DOM елементите са свързани");
    elementDiv.className = 'element ' + element.category;
 
 5. Задайте Grid позиция:
-   elementDiv.style.gridRow = element.row;
-   elementDiv.style.gridColumn = element.col;
+   elementDiv.style.gridRow = element.position.row;
+   elementDiv.style.gridColumn = element.position.col;
 
 6. Задайте dataset атрибути:
    elementDiv.dataset.number = element.number;
@@ -290,11 +290,6 @@ function renderPeriodicTable() {
    // TODO: Добавете към periodicTableEl
 
 
-
-
-   // TODO: Обновете видимия брой
-
-
    console.log("✅ Таблицата е рендерирана");
 }
 
@@ -319,8 +314,11 @@ function renderPeriodicTable() {
        case 'nonmetal':
            detailCategory.textContent = 'Неметал';
            break;
-       case 'metal':
-           detailCategory.textContent = 'Метал';
+       case 'transitionmetal':
+           detailCategory.textContent = 'Преходен метал';
+           break;
+       case 'post-transitionmetal':
+           detailCategory.textContent = 'Следпреходен метал';
            break;
        // ... останалите категории
    }
@@ -990,6 +988,33 @@ function resetQuiz() {
 // СЕДМИЦА 8: TODO - EVENT LISTENERS
 // ============================================
 
+/* Инструкции за функция closeElementDetails():
+ 
+1. Взимане на id:
+   document.getElementById('detailName').textContent = 'Изберете елемент';
+   document.getElementById('detailNumber').textContent = '-';
+   document.getElementById('detailSymbol').textContent = '-';
+   document.getElementById('detailMass').textContent = '-';
+   document.getElementById('detailCategory').textContent = '-';
+   document.getElementById('detailPeriod').textContent = '-';
+   document.getElementById('detailGroup').textContent = '-';
+   document.getElementById('detailDescription').textContent = 
+   'Изберете елемент от таблицата за да видите детайли.';
+*/
+
+function closeElementDetails() {
+   // TODO: Добавете кода за функцията тук
+
+
+
+
+
+
+
+
+
+}
+
 /*
 Инструкции за функция attachEventListeners():
 
@@ -1007,7 +1032,8 @@ function resetQuiz() {
 
 3. Затваряне на детайли:
    closeDetailsBtn.addEventListener('click', function() {
-       elementDetailsEl.scrollIntoView({ behavior: 'smooth' });
+      closeElementDetails();
+      elementDetailsEl.scrollIntoView({ behavior: 'smooth' });
    });
 
 4. Старт на викторина:
