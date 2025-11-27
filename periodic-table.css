@@ -534,9 +534,10 @@ header h1 {
 */
 
 /* TODO: Добавете .close-btn:hover стилове тук */
-
-
-
+.close-btn:hover {
+   background: #dc2626;
+   transform: rotate(90deg);
+}
 
 /* Инструкции за .element-details h2:
    - color: var(--accent-blue)
