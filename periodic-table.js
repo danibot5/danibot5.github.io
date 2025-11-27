@@ -30,7 +30,7 @@ console.log("🧪 Периодичната таблица се зарежда...
     description: 'Текст...'     // Описание
 }
 
-Категории: 'nonmetal', 'transitionmetal', 'post-transitionmetal', 'metalloid', 'noble-gas', 'alkali', 'alkaline', 'actinide', 'lanthanide'.
+Категории: 'nonmetal', 'metal', 'metalloid', 'noble-gas', 'alkali', 'alkaline'
 
 Примери за първите 3 елемента:
 - H (Водород): number: 1, row: 1, col: 1, category: 'nonmetal'
@@ -73,29 +73,1271 @@ const elements = [
       description: 'Мек, сребрист метал, използван в батерии и сплави. Реагира бурно с вода.',
       position: { row: 2, col: 1 }
    },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+   {
+      number: 4,
+      symbol: 'Be',
+      name: 'Берилий',
+      mass: '9.0122',
+      category: 'alkaline',
+      period: 2,
+      group: 2,
+      description: 'Лек, твърд метал, използван в аерокосмическата индустрия.',
+      position: { row: 2, col: 2 }
+   },
+   {
+      number: 5,
+      symbol: 'B',
+      name: 'Бор',
+      mass: '10.81',
+      category: 'metalloid',
+      period: 2,
+      group: 13,
+      description: 'Металоид, използван в стъкла и полупроводници.',
+      position: { row: 2, col: 13 }
+   },
+   {
+      number: 6,
+      symbol: 'C',
+      name: 'Въглерод',
+      mass: '12.011',
+      category: 'nonmetal',
+      period: 2,
+      group: 14,
+      description: 'Основен елемент на живота; среща се като графит и диамант.',
+      position: { row: 2, col: 14 }
+   },
+   {
+      number: 7,
+      symbol: 'N',
+      name: 'Азот',
+      mass: '14.007',
+      category: 'nonmetal',
+      period: 2,
+      group: 15,
+      description: 'Основен компонент на въздуха, нужен за живот.',
+      position: { row: 2, col: 15 }
+   },
+   {
+      number: 8,
+      symbol: 'O',
+      name: 'Кислород',
+      mass: '15.999',
+      category: 'nonmetal',
+      period: 2,
+      group: 16,
+      description: 'Поддържа горенето и дишането на живите организми.',
+      position: { row: 2, col: 16 }
+   },
+   {
+      number: 9,
+      symbol: 'F',
+      name: 'Флуор',
+      mass: '18.998',
+      category: 'halogen',
+      period: 2,
+      group: 17,
+      description: 'Силно реактивен газ, използван в пасти за зъби и химикали.',
+      position: { row: 2, col: 17 }
+   },
+   {
+      number: 10,
+      symbol: 'Ne',
+      name: 'Неон',
+      mass: '20.180',
+      category: 'noble-gas',
+      period: 2,
+      group: 18,
+      description: 'Инертен газ, използван в неонови лампи и реклама.',
+      position: { row: 2, col: 18 }
+   },
+   {
+      number: 11,
+      symbol: 'Na',
+      name: 'Натрий',
+      mass: '22.990',
+      category: 'alkali metal',
+      period: 3,
+      group: 1,
+      description: 'Реактивен метал, компонент на готварската сол (NaCl).',
+      position: { row: 3, col: 1 }
+   },
+   {
+      number: 12,
+      symbol: 'Mg',
+      name: 'Магнезий',
+      mass: '24.305',
+      category: 'alkaline',
+      period: 3,
+      group: 2,
+      description: 'Лек метал, използван в сплави и за поддържане на здрави кости.',
+      position: { row: 3, col: 2 }
+   },
+   {
+      number: 13,
+      symbol: 'Al',
+      name: 'Алуминий',
+      mass: '26.982',
+      category: 'post-transitionmetal',
+      period: 3,
+      group: 13,
+      description: 'Лек, устойчив метал, използван в опаковки и строителство.',
+      position: { row: 3, col: 13 }
+   },
+   {
+      number: 14,
+      symbol: 'Si',
+      name: 'Силиций',
+      mass: '28.085',
+      category: 'metalloid',
+      period: 3,
+      group: 14,
+      description: 'Основен елемент в пясъка и микрочиповете.',
+      position: { row: 3, col: 14 }
+   },
+   {
+      number: 15,
+      symbol: 'P',
+      name: 'Фосфор',
+      mass: '30.974',
+      category: 'nonmetal',
+      period: 3,
+      group: 15,
+      description: 'Важен за ДНК и клетъчната енергия; свети в тъмното.',
+      position: { row: 3, col: 15 }
+   },
+   {
+      number: 16,
+      symbol: 'S',
+      name: 'Сяра',
+      mass: '32.06',
+      category: 'nonmetal',
+      period: 3,
+      group: 16,
+      description: 'Жълт елемент с характерна миризма, използван в торове.',
+      position: { row: 3, col: 16 }
+   },
+   {
+      number: 17,
+      symbol: 'Cl',
+      name: 'Хлор',
+      mass: '35.45',
+      category: 'halogen',
+      period: 3,
+      group: 17,
+      description: 'Жълто-зелен газ, използван за дезинфекция и в PVC пластмаси.',
+      position: { row: 3, col: 17 }
+   },
+   {
+      number: 18,
+      symbol: 'Ar',
+      name: 'Аргон',
+      mass: '39.948',
+      category: 'noble-gas',
+      period: 3,
+      group: 18,
+      description: 'Инертен газ, използван в осветление и за защита при заваряване.',
+      position: { row: 3, col: 18 }
+   },
+   {
+      number: 19,
+      symbol: 'K',
+      name: 'Калий',
+      mass: '39.098',
+      category: 'alkali metal',
+      period: 4,
+      group: 1,
+      description: 'Силно реактивен метал, важен за нервната система.',
+      position: { row: 4, col: 1 }
+   },
+   {
+      number: 20,
+      symbol: 'Ca',
+      name: 'Калций',
+      mass: '40.078',
+      category: 'alkaline',
+      period: 4,
+      group: 2,
+      description: 'Основен елемент в костите и черупките на организми.',
+      position: { row: 4, col: 2 }
+   },
+   {
+      number: 21,
+      symbol: 'Sc',
+      name: 'Скандий',
+      mass: '44.956',
+      category: 'transitionmetal',
+      period: 4,
+      group: 3,
+      description: 'Лек метал, използван в сплави за самолети.',
+      position: { row: 4, col: 3 }
+   },
+   {
+      number: 22,
+      symbol: 'Ti',
+      name: 'Титан',
+      mass: '47.867',
+      category: 'transitionmetal',
+      period: 4,
+      group: 4,
+      description: 'Здрав и лек метал, използван в импланти и авиация.',
+      position: { row: 4, col: 4 }
+   },
+   {
+      number: 23,
+      symbol: 'V',
+      name: 'Ванадий',
+      mass: '50.942',
+      category: 'transitionmetal',
+      period: 4,
+      group: 5,
+      description: 'Използван в стомани и батерии за големи мощности.',
+      position: { row: 4, col: 5 }
+   },
+   {
+      number: 24,
+      symbol: 'Cr',
+      name: 'Хром',
+      mass: '51.996',
+      category: 'transitionmetal',
+      period: 4,
+      group: 6,
+      description: 'Придава блясък и устойчивост на стомана и покрития.',
+      position: { row: 4, col: 6 }
+   },
+   {
+      number: 25,
+      symbol: 'Mn',
+      name: 'Манган',
+      mass: '54.938',
+      category: 'transitionmetal',
+      period: 4,
+      group: 7,
+      description: 'Използван за производство на стомана и батерии.',
+      position: { row: 4, col: 7 }
+   },
+   {
+      number: 26,
+      symbol: 'Fe',
+      name: 'Желязо',
+      mass: '55.845',
+      category: 'transitionmetal',
+      period: 4,
+      group: 8,
+      description: 'Най-разпространеният метал в Земята; основен в стоманата.',
+      position: { row: 4, col: 8 }
+   },
+   {
+      number: 27,
+      symbol: 'Co',
+      name: 'Кобалт',
+      mass: '58.933',
+      category: 'transitionmetal',
+      period: 4,
+      group: 9,
+      description: 'Използван в батерии и магнити; присъства и в витамин B12.',
+      position: { row: 4, col: 9 }
+   },
+   {
+      number: 28,
+      symbol: 'Ni',
+      name: 'Никел',
+      mass: '58.693',
+      category: 'transitionmetal',
+      period: 4,
+      group: 10,
+      description: 'Издръжлив метал, използван в сплави и монети.',
+      position: { row: 4, col: 10 }
+   },
+   {
+      number: 29,
+      symbol: 'Cu',
+      name: 'Мед',
+      mass: '63.546',
+      category: 'transitionmetal',
+      period: 4,
+      group: 11,
+      description: 'Добър проводник, използван в електричеството и тръби.',
+      position: { row: 4, col: 11 }
+   },
+   {
+      number: 30,
+      symbol: 'Zn',
+      name: 'Цинк',
+      mass: '65.38',
+      category: 'transitionmetal',
+      period: 4,
+      group: 12,
+      description: 'Използван за галванизация и в биологични ензими.',
+      position: { row: 4, col: 12 }
+   },
+   {
+      number: 31,
+      symbol: 'Ga',
+      name: 'Галий',
+      mass: '69.723',
+      category: 'post-transitionmetal',
+      period: 4,
+      group: 13,
+      description: 'Метал, който се топи в ръка; използван в електроника.',
+      position: { row: 4, col: 13 }
+   },
+   {
+      number: 32,
+      symbol: 'Ge',
+      name: 'Германий',
+      mass: '72.63',
+      category: 'metalloid',
+      period: 4,
+      group: 14,
+      description: 'Полупроводник, използван в електроника и оптика.',
+      position: { row: 4, col: 14 }
+   },
+   {
+      number: 33,
+      symbol: 'As',
+      name: 'Арсен',
+      mass: '74.922',
+      category: 'metalloid',
+      period: 4,
+      group: 15,
+      description: 'Токсичен елемент, използван в полупроводници и пестициди.',
+      position: { row: 4, col: 15 }
+   },
+   {
+      number: 34,
+      symbol: 'Se',
+      name: 'Селен',
+      mass: '78.971',
+      category: 'nonmetal',
+      period: 4,
+      group: 16,
+      description: 'Необходим в малки количества за организма; използван в стъкло.',
+      position: { row: 4, col: 16 }
+   },
+   {
+      number: 35,
+      symbol: 'Br',
+      name: 'Бром',
+      mass: '79.904',
+      category: 'halogen',
+      period: 4,
+      group: 17,
+      description: 'Червено-кафява течност, използвана в химикали и фотография.',
+      position: { row: 4, col: 17 }
+   },
+   {
+      number: 36,
+      symbol: 'Kr',
+      name: 'Криптон',
+      mass: '83.798',
+      category: 'noble-gas',
+      period: 4,
+      group: 18,
+      description: 'Инертен газ, използван в лампи и лазери.',
+      position: { row: 4, col: 18 }
+   },
+   {
+      number: 37,
+      symbol: 'Rb',
+      name: 'Рубидий',
+      mass: '85.468',
+      category: 'alkali metal',
+      period: 5,
+      group: 1,
+      description: 'Мек, реактивен метал, използван в изследвания и електроника.',
+      position: { row: 5, col: 1 }
+   },
+   {
+      number: 38,
+      symbol: 'Sr',
+      name: 'Стронций',
+      mass: '87.62',
+      category: 'alkaline',
+      period: 5,
+      group: 2,
+      description: 'Използван в фойерверки и медицински приложения.',
+      position: { row: 5, col: 2 }
+   },
+   {
+      number: 39,
+      symbol: 'Y',
+      name: 'Итрий',
+      mass: '88.906',
+      category: 'transitionmetal',
+      period: 5,
+      group: 3,
+      description: 'Използван в червени фосфори на телевизори и лазери.',
+      position: { row: 5, col: 3 }
+   },
+   {
+      number: 40,
+      symbol: 'Zr',
+      name: 'Цирконий',
+      mass: '91.224',
+      category: 'transitionmetal',
+      period: 5,
+      group: 4,
+      description: 'Устойчив на корозия метал, използван в ядрени реактори.',
+      position: { row: 5, col: 4 }
+   },
+   {
+      number: 41,
+      symbol: 'Nb',
+      name: 'Ниобий',
+      mass: '92.906',
+      category: 'transitionmetal',
+      period: 5,
+      group: 5,
+      description: 'Използван в свръхпроводници и устойчиви сплави.',
+      position: { row: 5, col: 5 }
+   },
+   {
+      number: 42,
+      symbol: 'Mo',
+      name: 'Молибден',
+      mass: '95.95',
+      category: 'transitionmetal',
+      period: 5,
+      group: 6,
+      description: 'Подобрява здравината на стоманата и катализира реакции.',
+      position: { row: 5, col: 6 }
+   },
+   {
+      number: 43,
+      symbol: 'Tc',
+      name: 'Технеций',
+      mass: '98',
+      category: 'transitionmetal',
+      period: 5,
+      group: 7,
+      description: 'Първият изкуствен елемент, използван в медицинска диагностика.',
+      position: { row: 5, col: 7 }
+   },
+   {
+      number: 44,
+      symbol: 'Ru',
+      name: 'Рутений',
+      mass: '101.07',
+      category: 'transitionmetal',
+      period: 5,
+      group: 8,
+      description: 'Използван в електроника и каталитични процеси.',
+      position: { row: 5, col: 8 }
+   },
+   {
+      number: 45,
+      symbol: 'Rh',
+      name: 'Родий',
+      mass: '102.91',
+      category: 'transitionmetal',
+      period: 5,
+      group: 9,
+      description: 'Скъп метал, използван в катализатори и бижута.',
+      position: { row: 5, col: 9 }
+   },
+   {
+      number: 46,
+      symbol: 'Pd',
+      name: 'Паладий',
+      mass: '106.42',
+      category: 'transitionmetal',
+      period: 5,
+      group: 10,
+      description: 'Широко използван в катализатори и електроника.',
+      position: { row: 5, col: 10 }
+   },
+   {
+      number: 47,
+      symbol: 'Ag',
+      name: 'Сребро',
+      mass: '107.87',
+      category: 'transitionmetal',
+      period: 5,
+      group: 11,
+      description: 'Най-добрият проводник; използван в бижута и електроника.',
+      position: { row: 5, col: 11 }
+   },
+   {
+      number: 48,
+      symbol: 'Cd',
+      name: 'Кадмий',
+      mass: '112.41',
+      category: 'transitionmetal',
+      period: 5,
+      group: 12,
+      description: 'Използван в батерии и покрития, но токсичен.',
+      position: { row: 5, col: 12 }
+   },
+   {
+      number: 49,
+      symbol: 'In',
+      name: 'Индий',
+      mass: '114.82',
+      category: 'post-transitionmetal',
+      period: 5,
+      group: 13,
+      description: 'Мек метал, използван в LCD екрани и сплави.',
+      position: { row: 5, col: 13 }
+   },
+   {
+      number: 50,
+      symbol: 'Sn',
+      name: 'Калай',
+      mass: '118.71',
+      category: 'post-transitionmetal',
+      period: 5,
+      group: 14,
+      description: 'Използван за запояване и консервни кутии.',
+      position: { row: 5, col: 14 }
+   },
+   {
+      number: 51,
+      symbol: 'Sb',
+      name: 'Сурма',
+      mass: '121.76',
+      category: 'metalloid',
+      period: 5,
+      group: 15,
+      description: 'Използвана в огнеустойчиви материали и батерии.',
+      position: { row: 5, col: 15 }
+   },
+   {
+      number: 52,
+      symbol: 'Te',
+      name: 'Телур',
+      mass: '127.60',
+      category: 'metalloid',
+      period: 5,
+      group: 16,
+      description: 'Използван в соларни панели и сплави.',
+      position: { row: 5, col: 16 }
+   },
+   {
+      number: 53,
+      symbol: 'I',
+      name: 'Йод',
+      mass: '126.90',
+      category: 'halogen',
+      period: 5,
+      group: 17,
+      description: 'Необходим за щитовидната жлеза; използван в антисептици.',
+      position: { row: 5, col: 17 }
+   },
+   {
+      number: 54,
+      symbol: 'Xe',
+      name: 'Ксенон',
+      mass: '131.29',
+      category: 'noble-gas',
+      period: 5,
+      group: 18,
+      description: 'Инертен газ, използван в светкавици и упойки.',
+      position: { row: 5, col: 18 }
+   },
+   {
+      number: 55,
+      symbol: 'Cs',
+      name: 'Цезий',
+      mass: '132.91',
+      category: 'alkali metal',
+      period: 6,
+      group: 1,
+      description: 'Много реактивен метал, използван в атомни часовници.',
+      position: { row: 6, col: 1 }
+   },
+   {
+      number: 56,
+      symbol: 'Ba',
+      name: 'Барий',
+      mass: '137.33',
+      category: 'alkaline',
+      period: 6,
+      group: 2,
+      description: 'Използван в медицински снимки и фойерверки.',
+      position: { row: 6, col: 2 }
+   },
+   {
+      number: 57,
+      symbol: 'La',
+      name: 'Лантан',
+      mass: '138.91',
+      category: 'lanthanide',
+      period: 6,
+      group: 3,
+      description: 'Начало на лантанидите; използван в оптика и батерии.',
+      position: { row: 9, col: 3 }
+   },
+   {
+      number: 58,
+      symbol: 'Ce',
+      name: 'Церий',
+      mass: '140.12',
+      category: 'lanthanide',
+      period: 6,
+      group: 4,
+      description: 'Използван в катализатори и запалки.',
+      position: { row: 9, col: 4 }
+   },
+   {
+      number: 59,
+      symbol: 'Pr',
+      name: 'Празеодим',
+      mass: '140.91',
+      category: 'lanthanide',
+      period: 6,
+      group: 5,
+      description: 'Използван в магнити и оцветяване на стъкло.',
+      position: { row: 9, col: 5 }
+   },
+   {
+      number: 60,
+      symbol: 'Nd',
+      name: 'Неодим',
+      mass: '144.24',
+      category: 'lanthanide',
+      period: 6,
+      group: 6,
+      description: 'Силен магнитен елемент, използван в високоговорители и двигатели.',
+      position: { row: 9, col: 6 }
+   },
+   {
+      number: 61,
+      symbol: 'Pm',
+      name: 'Прометий',
+      mass: '145',
+      category: 'lanthanide',
+      period: 6,
+      group: 7,
+      description: 'Радиоактивен елемент, използван в батерии и изследвания.',
+      position: { row: 9, col: 7 }
+   },
+   {
+      number: 62,
+      symbol: 'Sm',
+      name: 'Самарий',
+      mass: '150.36',
+      category: 'lanthanide',
+      period: 6,
+      group: 8,
+      description: 'Използван в магнити и ядрени реактори.',
+      position: { row: 9, col: 8 }
+   },
+   {
+      number: 63,
+      symbol: 'Eu',
+      name: 'Европий',
+      mass: '151.96',
+      category: 'lanthanide',
+      period: 6,
+      group: 9,
+      description: 'Използван в червени фосфори и лазери.',
+      position: { row: 9, col: 9 }
+   },
+   {
+      number: 64,
+      symbol: 'Gd',
+      name: 'Гадолиний',
+      mass: '157.25',
+      category: 'lanthanide',
+      period: 6,
+      group: 10,
+      description: 'Използван в ЯМР контрастни агенти и магнити.',
+      position: { row: 9, col: 10 }
+   },
+   {
+      number: 65,
+      symbol: 'Tb',
+      name: 'Тербий',
+      mass: '158.93',
+      category: 'lanthanide',
+      period: 6,
+      group: 11,
+      description: 'Използван в зелени фосфори и електроника.',
+      position: { row: 9, col: 11 }
+   },
+   {
+      number: 66,
+      symbol: 'Dy',
+      name: 'Диспрозий',
+      mass: '162.50',
+      category: 'lanthanide',
+      period: 6,
+      group: 12,
+      description: 'Използван в магнити и ядрени реактори.',
+      position: { row: 9, col: 12 }
+   },
+   {
+      number: 67,
+      symbol: 'Ho',
+      name: 'Холмий',
+      mass: '164.93',
+      category: 'lanthanide',
+      period: 6,
+      group: 13,
+      description: 'Използван в лазери и магнитни материали.',
+      position: { row: 9, col: 13 }
+   },
+   {
+      number: 68,
+      symbol: 'Er',
+      name: 'Ербий',
+      mass: '167.26',
+      category: 'lanthanide',
+      period: 6,
+      group: 14,
+      description: 'Използван в оптични влакна и лазери.',
+      position: { row: 9, col: 14 }
+   },
+   {
+      number: 69,
+      symbol: 'Tm',
+      name: 'Тулий',
+      mass: '168.93',
+      category: 'lanthanide',
+      period: 6,
+      group: 15,
+      description: 'Използван в лазери и медицинска апаратура.',
+      position: { row: 9, col: 15 }
+   },
+   {
+      number: 70,
+      symbol: 'Yb',
+      name: 'Итербий',
+      mass: '173.05',
+      category: 'lanthanide',
+      period: 6,
+      group: 16,
+      description: 'Използван в влакнести лазери и сплави.',
+      position: { row: 9, col: 16 }
+   },
+   {
+      number: 71,
+      symbol: 'Lu',
+      name: 'Лутеций',
+      mass: '174.97',
+      category: 'lanthanide',
+      period: 6,
+      group: 17,
+      description: 'Най-тежкият лантанид, използван в PET скенери и катализатори.',
+      position: { row: 9, col: 17 }
+   },
+   {
+      number: 72,
+      symbol: 'Hf',
+      name: 'Хафний',
+      mass: '178.49',
+      category: 'transitionmetal',
+      period: 6,
+      group: 4,
+      description: 'Използван в ядрени реактори и микрочипове.',
+      position: { row: 6, col: 4 }
+   },
+   {
+      number: 73,
+      symbol: 'Ta',
+      name: 'Тантал',
+      mass: '180.95',
+      category: 'transitionmetal',
+      period: 6,
+      group: 5,
+      description: 'Използван в електроника и хирургични инструменти.',
+      position: { row: 6, col: 5 }
+   },
+   {
+      number: 74,
+      symbol: 'W',
+      name: 'Волфрам',
+      mass: '183.84',
+      category: 'transitionmetal',
+      period: 6,
+      group: 6,
+      description: 'Най-висока точка на топене; използван в крушки и инструменти.',
+      position: { row: 6, col: 6 }
+   },
+   {
+      number: 75,
+      symbol: 'Re',
+      name: 'Рений',
+      mass: '186.21',
+      category: 'transitionmetal',
+      period: 6,
+      group: 7,
+      description: 'Използван в суперсплави и реактивни двигатели.',
+      position: { row: 6, col: 7 }
+   },
+   {
+      number: 76,
+      symbol: 'Os',
+      name: 'Осмий',
+      mass: '190.23',
+      category: 'transitionmetal',
+      period: 6,
+      group: 8,
+      description: 'Много плътен метал, използван в писалки и контакти.',
+      position: { row: 6, col: 8 }
+   },
+   {
+      number: 77,
+      symbol: 'Ir',
+      name: 'Иридий',
+      mass: '192.22',
+      category: 'transitionmetal',
+      period: 6,
+      group: 9,
+      description: 'Устойчив метал, използван в катализатори и електроди.',
+      position: { row: 6, col: 9 }
+   },
+   {
+      number: 78,
+      symbol: 'Pt',
+      name: 'Платина',
+      mass: '195.08',
+      category: 'transitionmetal',
+      period: 6,
+      group: 10,
+      description: 'Скъп и устойчив метал, използван в бижута и катализатори.',
+      position: { row: 6, col: 10 }
+   },
+   {
+      number: 79,
+      symbol: 'Au',
+      name: 'Злато',
+      mass: '196.97',
+      category: 'transitionmetal',
+      period: 6,
+      group: 11,
+      description: 'Благороден метал, използван в бижута и електроника.',
+      position: { row: 6, col: 11 }
+   },
+   {
+      number: 80,
+      symbol: 'Hg',
+      name: 'Живак',
+      mass: '200.59',
+      category: 'transitionmetal',
+      period: 6,
+      group: 12,
+      description: 'Течен при стайна температура; използван в термометри и лампи.',
+      position: { row: 6, col: 12 }
+   },
+   {
+      number: 81,
+      symbol: 'Tl',
+      name: 'Талий',
+      mass: '204.38',
+      category: 'post-transitionmetal',
+      period: 6,
+      group: 13,
+      description: 'Токсичен метал, използван в електроника и стъкло.',
+      position: { row: 6, col: 13 }
+   },
+   {
+      number: 82,
+      symbol: 'Pb',
+      name: 'Олово',
+      mass: '207.2',
+      category: 'post-transitionmetal',
+      period: 6,
+      group: 14,
+      description: 'Мек тежък метал, използван в батерии и защита от радиация.',
+      position: { row: 6, col: 14 }
+   },
+   {
+      number: 83,
+      symbol: 'Bi',
+      name: 'Бисмут',
+      mass: '208.98',
+      category: 'post-transitionmetal',
+      period: 6,
+      group: 15,
+      description: 'Безопасен тежък метал, използван в козметика и лекарства.',
+      position: { row: 6, col: 15 }
+   },
+   {
+      number: 84,
+      symbol: 'Po',
+      name: 'Полоний',
+      mass: '209',
+      category: 'post-transitionmetal',
+      period: 6,
+      group: 16,
+      description: 'Радиоактивен елемент, открит от Мария Кюри.',
+      position: { row: 6, col: 16 }
+   },
+   {
+      number: 85,
+      symbol: 'At',
+      name: 'Астат',
+      mass: '210',
+      category: 'halogen',
+      period: 6,
+      group: 17,
+      description: 'Изключително рядък радиоактивен халоген.',
+      position: { row: 6, col: 17 }
+   },
+   {
+      number: 86,
+      symbol: 'Rn',
+      name: 'Радон',
+      mass: '222',
+      category: 'noble-gas',
+      period: 6,
+      group: 18,
+      description: 'Радиоактивен инертен газ, срещан в земната кора.',
+      position: { row: 6, col: 18 }
+   },
+   {
+      number: 87,
+      symbol: 'Fr',
+      name: 'Франций',
+      mass: '223',
+      category: 'alkali metal',
+      period: 7,
+      group: 1,
+      description: 'Изключително рядък и радиоактивен алкален метал.',
+      position: { row: 7, col: 1 }
+   },
+   {
+      number: 88,
+      symbol: 'Ra',
+      name: 'Радий',
+      mass: '226',
+      category: 'alkaline',
+      period: 7,
+      group: 2,
+      description: 'Силен радиоактивен елемент, открит от Кюри.',
+      position: { row: 7, col: 2 }
+   },
+   {
+      number: 89,
+      symbol: 'Ac',
+      name: 'Актиний',
+      mass: '227',
+      category: 'actinide',
+      period: 7,
+      group: 3,
+      description: 'Начало на актинидите; силно радиоактивен.',
+      position: { row: 10, col: 3 }
+   },
+   {
+      number: 90,
+      symbol: 'Th',
+      name: 'Торий',
+      mass: '232.04',
+      category: 'actinide',
+      period: 7,
+      group: 4,
+      description: 'Използван като гориво в ядрени реактори.',
+      position: { row: 10, col: 4 }
+   },
+   {
+      number: 91,
+      symbol: 'Pa',
+      name: 'Протактиний',
+      mass: '231.04',
+      category: 'actinide',
+      period: 7,
+      group: 5,
+      description: 'Редък и радиоактивен елемент, използван в изследвания.',
+      position: { row: 10, col: 5 }
+   },
+   {
+      number: 92,
+      symbol: 'U',
+      name: 'Уран',
+      mass: '238.03',
+      category: 'actinide',
+      period: 7,
+      group: 6,
+      description: 'Използван като гориво в ядрени електроцентрали.',
+      position: { row: 10, col: 6 }
+   },
+   {
+      number: 93,
+      symbol: 'Np',
+      name: 'Нептуний',
+      mass: '237',
+      category: 'actinide',
+      period: 7,
+      group: 7,
+      description: 'Получен от уран; използван в ядрени изследвания.',
+      position: { row: 10, col: 7 }
+   },
+   {
+      number: 94,
+      symbol: 'Pu',
+      name: 'Плутоний',
+      mass: '244',
+      category: 'actinide',
+      period: 7,
+      group: 8,
+      description: 'Използван в ядрено оръжие и реактори.',
+      position: { row: 10, col: 8 }
+   },
+   {
+      number: 95,
+      symbol: 'Am',
+      name: 'Америций',
+      mass: '243',
+      category: 'actinide',
+      period: 7,
+      group: 9,
+      description: 'Използван в детектори за дим и изследвания.',
+      position: { row: 10, col: 9 }
+   },
+   {
+      number: 96,
+      symbol: 'Cm',
+      name: 'Кюрий',
+      mass: '247',
+      category: 'actinide',
+      period: 7,
+      group: 10,
+      description: 'Открит от семейство Кюри; радиоактивен източник на топлина.',
+      position: { row: 10, col: 10 }
+   },
+   {
+      number: 97,
+      symbol: 'Bk',
+      name: 'Беркелий',
+      mass: '247',
+      category: 'actinide',
+      period: 7,
+      group: 11,
+      description: 'Синтетичен елемент, използван само за научни цели.',
+      position: { row: 10, col: 11 }
+   },
+   {
+      number: 98,
+      symbol: 'Cf',
+      name: 'Калифорний',
+      mass: '251',
+      category: 'actinide',
+      period: 7,
+      group: 12,
+      description: 'Използван в ядрени реактори и сканиране на материали.',
+      position: { row: 10, col: 12 }
+   },
+   {
+      number: 99,
+      symbol: 'Es',
+      name: 'Айнщайний',
+      mass: '252',
+      category: 'actinide',
+      period: 7,
+      group: 13,
+      description: 'Кръстен на Айнщайн; използван само в изследвания.',
+      position: { row: 10, col: 13 }
+   },
+   {
+      number: 100,
+      symbol: 'Fm',
+      name: 'Фермий',
+      mass: '257',
+      category: 'actinide',
+      period: 7,
+      group: 14,
+      description: 'Синтетичен елемент, получен при ядрени експлозии.',
+      position: { row: 10, col: 14 }
+   },
+   {
+      number: 101,
+      symbol: 'Md',
+      name: 'Менделевий',
+      mass: '258',
+      category: 'actinide',
+      period: 7,
+      group: 15,
+      description: 'Кръстен на Менделеев; използван само в лаборатории.',
+      position: { row: 10, col: 15 }
+   },
+   {
+      number: 102,
+      symbol: 'No',
+      name: 'Нобелий',
+      mass: '259',
+      category: 'actinide',
+      period: 7,
+      group: 16,
+      description: 'Кръстен на Алфред Нобел; радиоактивен и рядък.',
+      position: { row: 10, col: 16 }
+   },
+   {
+      number: 103,
+      symbol: 'Lr',
+      name: 'Лоуренсий',
+      mass: '266',
+      category: 'actinide',
+      period: 7,
+      group: 17,
+      description: 'Последният актинид, открит в лаборатория.',
+      position: { row: 10, col: 17 }
+   },
+   {
+      number: 104,
+      symbol: 'Rf',
+      name: 'Ръдърфордий',
+      mass: '267',
+      category: 'transitionmetal',
+      period: 7,
+      group: 4,
+      description: 'Синтетичен, тежък и радиоактивен елемент.',
+      position: { row: 7, col: 4 }
+   },
+   {
+      number: 105,
+      symbol: 'Db',
+      name: 'Дубний',
+      mass: '270',
+      category: 'transitionmetal',
+      period: 7,
+      group: 5,
+      description: 'Открит в Дубна, Русия; изключително нестабилен.',
+      position: { row: 7, col: 5 }
+   },
+   {
+      number: 106,
+      symbol: 'Sg',
+      name: 'Сиборгий',
+      mass: '271',
+      category: 'transitionmetal',
+      period: 7,
+      group: 6,
+      description: 'Кръстен на учения Глен Сиборг; силно радиоактивен.',
+      position: { row: 7, col: 6 }
+   },
+   {
+      number: 107,
+      symbol: 'Bh',
+      name: 'Борий',
+      mass: '270',
+      category: 'transitionmetal',
+      period: 7,
+      group: 7,
+      description: 'Кръстен на Бор; синтетичен и нестабилен елемент.',
+      position: { row: 7, col: 7 }
+   },
+   {
+      number: 108,
+      symbol: 'Hs',
+      name: 'Хасий',
+      mass: '277',
+      category: 'transitionmetal',
+      period: 7,
+      group: 8,
+      description: 'Синтетичен елемент, живее само части от секундата.',
+      position: { row: 7, col: 8 }
+   },
+   {
+      number: 109,
+      symbol: 'Mt',
+      name: 'Майтнерий',
+      mass: '278',
+      category: 'transitionmetal',
+      period: 7,
+      group: 9,
+      description: 'Кръстен на физичката Лиза Майтнер; изключително нестабилен.',
+      position: { row: 7, col: 9 }
+   },
+   {
+      number: 110,
+      symbol: 'Ds',
+      name: 'Дармщатий',
+      mass: '281',
+      category: 'transitionmetal',
+      period: 7,
+      group: 10,
+      description: 'Открит в Дармщат, Германия; живее милисекунди.',
+      position: { row: 7, col: 10 }
+   },
+   {
+      number: 111,
+      symbol: 'Rg',
+      name: 'Рьонтгений',
+      mass: '282',
+      category: 'transitionmetal',
+      period: 7,
+      group: 11,
+      description: 'Кръстен на Вилхелм Рьонтген; изкуствен елемент.',
+      position: { row: 7, col: 11 }
+   },
+   {
+      number: 112,
+      symbol: 'Cn',
+      name: 'Коперниций',
+      mass: '285',
+      category: 'transitionmetal',
+      period: 7,
+      group: 12,
+      description: 'Кръстен на Коперник; силно радиоактивен и краткотраен.',
+      position: { row: 7, col: 12 }
+   },
+   {
+      number: 113,
+      symbol: 'Nh',
+      name: 'Нихоний',
+      mass: '286',
+      category: 'post-transitionmetal',
+      period: 7,
+      group: 13,
+      description: 'Открит в Япония; живее само мигновено.',
+      position: { row: 7, col: 13 }
+   },
+   {
+      number: 114,
+      symbol: 'Fl',
+      name: 'Фльоровий',
+      mass: '289',
+      category: 'post-transitionmetal',
+      period: 7,
+      group: 14,
+      description: 'Кръстен на руски физик; тежък и нестабилен.',
+      position: { row: 7, col: 14 }
+   },
+   {
+      number: 115,
+      symbol: 'Mc',
+      name: 'Московий',
+      mass: '290',
+      category: 'post-transitionmetal',
+      period: 7,
+      group: 15,
+      description: 'Кръстен на Москва; синтетичен и радиоактивен.',
+      position: { row: 7, col: 15 }
+   },
+   {
+      number: 116,
+      symbol: 'Lv',
+      name: 'Ливерморий',
+      mass: '293',
+      category: 'post-transitionmetal',
+      period: 7,
+      group: 16,
+      description: 'Кръстен на Ливермор; изключително краткотраен.',
+      position: { row: 7, col: 16 }
+   },
+   {
+      number: 117,
+      symbol: 'Ts',
+      name: 'Тенесин',
+      mass: '294',
+      category: 'halogen',
+      period: 7,
+      group: 17,
+      description: 'Синтетичен халоген, открит през 2010 година.',
+      position: { row: 7, col: 17 }
+   },
+   {
+      number: 118,
+      symbol: 'Og',
+      name: 'Оганесон',
+      mass: '294',
+      category: 'noble-gas',
+      period: 7,
+      group: 18,
+      description: 'Най-тежкият елемент; може би твърд при стайна температура.',
+      position: { row: 7, col: 18 }
+   }
 
 ];
 
