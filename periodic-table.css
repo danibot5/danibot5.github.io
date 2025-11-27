@@ -408,53 +408,64 @@ header h1 {
 */
 
 /* TODO: Добавете .element.nonmetal стилове тук */
-
-
-
+.element.nonmetal {
+   border-color: var(--nonmetal);
+   background: linear-gradient(135deg, var(--bg-dark), rgba(255, 107, 157, 0.15));
+}
 
 /* TODO: Добавете .element.transitionmetal стилове тук */
-
-
-
+.element.transitionmetal {
+   border-color: var(--transitionmetal);
+   background: linear-gradient(135deg, var(--bg-dark), rgba(252, 255, 48, 0.15));
+}
 
 /* TODO: Добавете .element.post-transitionmetal стилове тук */
-
-
-
+.element.post-transitionmetal {
+   border-color: var(--post-transitionmetal);
+   background: linear-gradient(135deg, var(--bg-dark), rgba(214, 154, 1, 0.274));
+}
 
 /* TODO: Добавете .element.metalloid стилове тук */
-
-
-
+.element.metalloid {
+   border-color: var(--metalloid);
+   background: linear-gradient(135deg, var(--bg-dark), rgba(167, 139, 250, 0.15));
+}
 
 /* TODO: Добавете .element.noble-gas стилове тук */
-
-
-
+.element.noble-gas {
+   border-color: var(--noble-gas);
+   background: linear-gradient(135deg, var(--bg-dark), rgba(96, 165, 250, 0.15));
+}
 
 /* TODO: Добавете .element.alkali стилове тук */
-
-
-
+.element.alkali {
+   border-color: var(--alkali);
+   background: linear-gradient(135deg, var(--bg-dark), rgba(249, 115, 22, 0.15));
+}
 
 /* TODO: Добавете .element.alkaline стилове тук */
-
-
-
+.element.alkaline {
+   border-color: var(--alkaline);
+   background: linear-gradient(135deg, var(--bg-dark), rgba(134, 204, 22, 0.15));
+}
 
 /* TODO: Добавете .element.lanthanide стилове тук */
-
-
+.element.lanthanide {
+   border-color: var(--lanthanide);
+   background: linear-gradient(135deg, var(--bg-dark), rgba(7, 204, 204, 0.226));
+}
 
 /* TODO: Добавете .element.halogen стилове тук */
-
-
-
+.element.halogen {
+   border-color: var(--halogen);
+   background: linear-gradient(135deg, var(--bg-dark), rgba(204, 7, 7, 0.226));
+}
 
 /* TODO: Добавете .element.actinide стилове тук */
-
-
-
+.element.actinide {
+   border-color: var(--actinide);
+   background: linear-gradient(135deg, var(--bg-dark), rgba(0, 117, 10, 0.226));
+}
 
 
 /* ============================================
@@ -470,9 +481,14 @@ header h1 {
 */
 
 /* TODO: Добавете .element-details стилове тук */
-
-
-
+.element-details {
+   background: var(--bg-card);
+   border: 1px solid var(--border-color);
+   border-radius: 15px;
+   padding: 30px;
+   margin-bottom: 40px;
+   position: relative;
+}
 
 /* Инструкции за .close-btn:
    - position: absolute
@@ -493,8 +509,23 @@ header h1 {
 */
 
 /* TODO: Добавете .close-btn стилове тук */
-
-
+.close-btn {
+   position: absolute;
+   top: 15px;
+   right: 15px;
+   background: var(--accent-red);
+   color: white;
+   border: none;
+   border-radius: 50%;
+   width: 35px;
+   height: 35px;
+   font-size: 1.5rem;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
 
 
 /* СЕДМИЦА 10: TODO - Hover за .close-btn
@@ -514,9 +545,11 @@ header h1 {
 */
 
 /* TODO: Добавете .element-details h2 стилове тук */
-
-
-
+.element-details h2 {
+   color: var(--accent-blue);
+   margin-bottom: 20px;
+   font-size: 2rem;
+}
 
 /* Инструкции за .detail-grid:
    - display: grid
@@ -526,9 +559,12 @@ header h1 {
 */
 
 /* TODO: Добавете .detail-grid стилове тук */
-
-
-
+.detail-grid {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+   gap: 15px;
+   margin-bottom: 20px;
+}
 
 /* Инструкции за .detail-item:
    - background: var(--bg-dark)
@@ -538,9 +574,12 @@ header h1 {
 */
 
 /* TODO: Добавете .detail-item стилове тук */
-
-
-
+.detail-item {
+   background: var(--bg-dark);
+   padding: 15px;
+   border-radius: 8px;
+   border: 1px solid var(--border-color);
+}
 
 /* Инструкции за .detail-label:
    - display: block
@@ -550,9 +589,12 @@ header h1 {
 */
 
 /* TODO: Добавете .detail-label стилове тук */
-
-
-
+.detail-label {
+   display: block;
+   font-size: 0.85rem;
+   color: var(--text-secondary);
+   margin-bottom: 5px;
+}
 
 /* Инструкции за .detail-value:
    - display: block
@@ -562,9 +604,12 @@ header h1 {
 */
 
 /* TODO: Добавете .detail-value стилове тук */
-
-
-
+.detail-value {
+   display: block;
+   font-size: 1.2rem;
+   font-weight: bold;
+   color: var(--accent-blue);
+}
 
 /* Инструкции за .detail-description:
    - background: var(--bg-dark)
@@ -575,8 +620,13 @@ header h1 {
 */
 
 /* TODO: Добавете .detail-description стилове тук */
-
-
+.detail-description {
+   background: var(--bg-dark);
+   padding: 20px;
+   border-radius: 8px;
+   border-left: 4px solid var(--accent-blue);
+   line-height: 1.8;
+}
 
 
 /* ============================================
