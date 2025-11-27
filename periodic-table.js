@@ -30,7 +30,7 @@ console.log("🧪 Периодичната таблица се зарежда...
     description: 'Текст...'     // Описание
 }
 
-Категории: 'nonmetal', 'transitionmetal', 'post-transitionmetal', 'metalloid', 'noble-gas', 'alkali', 'alkaline', 'actinide', 'lanthanide'.
+Категории: 'nonmetal', 'metal', 'metalloid', 'noble-gas', 'alkali', 'alkaline'
 
 Примери за първите 3 елемента:
 - H (Водород): number: 1, row: 1, col: 1, category: 'nonmetal'
@@ -55,7 +55,7 @@ const elements = [
       number: 2,
       symbol: 'He',
       name: 'Хелий',
-      mass: '4.003',
+      mass: '4.003', 
       category: 'noble-gas',
       period: 1,
       group: 18,
@@ -73,8 +73,6 @@ const elements = [
       description: 'Мек, сребрист метал, използван в батерии и сплави. Реагира бурно с вода.',
       position: { row: 2, col: 1 }
    },
-
-
 
 
 
