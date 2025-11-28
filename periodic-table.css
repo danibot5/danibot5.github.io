@@ -63,8 +63,6 @@
 }
 
 
-
-
 /* ============================================
    СЕДМИЦА 3: TODO - RESET СТИЛОВЕ
    ============================================
@@ -80,9 +78,6 @@
    padding: 0;
    box-sizing: border-box;
 }
-
-
-
 
 
 /* ============================================
@@ -107,9 +102,6 @@ body {
    line-height: 1.6;
 }
 
-
-
-
 /* ============================================
    СЕДМИЦА 3: TODO - CONTAINER
    ============================================
@@ -123,10 +115,6 @@ body {
    max-width: 1400px;
    margin: 0 auto;
 }
-
-
-
-
 
 /* ============================================
    СЕДМИЦА 3: TODO - HEADER СТИЛОВЕ
@@ -150,8 +138,6 @@ header {
    box-shadow: 0 10px 40px rgba(79, 106, 255, 0.3);
 }
 
-
-
 /* Инструкции за header h1:
    - font-size: 2.5rem
    - margin-bottom: 10px
@@ -165,9 +151,6 @@ header h1 {
    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-
-
-
 /* Инструкции за .subtitle:
    - font-size: 1.1rem
    - opacity: 0.9
@@ -178,8 +161,6 @@ header h1 {
    font-size: 1.1rem;
    opacity: 0.9;
 }
-
-
 
 /* ============================================
    СЕДМИЦА 3: TODO - КОНТРОЛИ
@@ -214,7 +195,8 @@ header h1 {
 */
 
 /* TODO: Добавете .filter-section и .search-section стилове тук */
-.filter-section, .search-section {
+.filter-section,
+.search-section {
    display: flex;
    flex-direction: column;
    gap: 8px;
@@ -226,7 +208,8 @@ header h1 {
 */
 
 /* TODO: Добавете label стилове тук */
-.filter-section label, .search-section label {
+.filter-section label,
+.search-section label {
    font-size: 0.9rem;
    color: var(--text-secondary);
 }
@@ -242,7 +225,8 @@ header h1 {
 */
 
 /* TODO: Добавете select и input стилове тук */
-select, input[type="text"] {
+select,
+input[type="text"] {
    padding: 10px 15px;
    border: 2px solid var(--border-color);
    border-radius: 8px;
@@ -260,7 +244,8 @@ select, input[type="text"] {
 */
 
 /* TODO: Добавете :focus стилове тук */
-select:focus, input[type="text"]:focus {
+select:focus,
+input[type="text"]:focus {
    outline: none;
    border-color: var(--accent-blue);
    box-shadow: 0 0 0 3px rgba(79, 106, 255, 0.2);
