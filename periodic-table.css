@@ -63,8 +63,6 @@
 }
 
 
-
-
 /* ============================================
    СЕДМИЦА 3: TODO - RESET СТИЛОВЕ
    ============================================
@@ -80,9 +78,6 @@
    padding: 0;
    box-sizing: border-box;
 }
-
-
-
 
 
 /* ============================================
@@ -107,9 +102,6 @@ body {
    line-height: 1.6;
 }
 
-
-
-
 /* ============================================
    СЕДМИЦА 3: TODO - CONTAINER
    ============================================
@@ -123,10 +115,6 @@ body {
    max-width: 1400px;
    margin: 0 auto;
 }
-
-
-
-
 
 /* ============================================
    СЕДМИЦА 3: TODO - HEADER СТИЛОВЕ
@@ -150,8 +138,6 @@ header {
    box-shadow: 0 10px 40px rgba(79, 106, 255, 0.3);
 }
 
-
-
 /* Инструкции за header h1:
    - font-size: 2.5rem
    - margin-bottom: 10px
@@ -165,9 +151,6 @@ header h1 {
    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-
-
-
 /* Инструкции за .subtitle:
    - font-size: 1.1rem
    - opacity: 0.9
@@ -178,8 +161,6 @@ header h1 {
    font-size: 1.1rem;
    opacity: 0.9;
 }
-
-
 
 /* ============================================
    СЕДМИЦА 3: TODO - КОНТРОЛИ
@@ -214,7 +195,8 @@ header h1 {
 */
 
 /* TODO: Добавете .filter-section и .search-section стилове тук */
-.filter-section, .search-section {
+.filter-section,
+.search-section {
    display: flex;
    flex-direction: column;
    gap: 8px;
@@ -226,7 +208,8 @@ header h1 {
 */
 
 /* TODO: Добавете label стилове тук */
-.filter-section label, .search-section label {
+.filter-section label,
+.search-section label {
    font-size: 0.9rem;
    color: var(--text-secondary);
 }
@@ -242,7 +225,8 @@ header h1 {
 */
 
 /* TODO: Добавете select и input стилове тук */
-select, input[type="text"] {
+select,
+input[type="text"] {
    padding: 10px 15px;
    border: 2px solid var(--border-color);
    border-radius: 8px;
@@ -260,7 +244,8 @@ select, input[type="text"] {
 */
 
 /* TODO: Добавете :focus стилове тук */
-select:focus, input[type="text"]:focus {
+select:focus,
+input[type="text"]:focus {
    outline: none;
    border-color: var(--accent-blue);
    box-shadow: 0 0 0 3px rgba(79, 106, 255, 0.2);
@@ -469,53 +454,64 @@ select:focus, input[type="text"]:focus {
 */
 
 /* TODO: Добавете .element.nonmetal стилове тук */
-
-
-
+.element.nonmetal {
+   border-color: var(--nonmetal);
+   background: linear-gradient(135deg, var(--bg-dark), rgba(255, 107, 157, 0.15));
+}
 
 /* TODO: Добавете .element.transitionmetal стилове тук */
-
-
-
+.element.transitionmetal {
+   border-color: var(--transitionmetal);
+   background: linear-gradient(135deg, var(--bg-dark), rgba(252, 255, 48, 0.15));
+}
 
 /* TODO: Добавете .element.post-transitionmetal стилове тук */
-
-
-
+.element.post-transitionmetal {
+   border-color: var(--post-transitionmetal);
+   background: linear-gradient(135deg, var(--bg-dark), rgba(214, 154, 1, 0.274));
+}
 
 /* TODO: Добавете .element.metalloid стилове тук */
-
-
-
+.element.metalloid {
+   border-color: var(--metalloid);
+   background: linear-gradient(135deg, var(--bg-dark), rgba(167, 139, 250, 0.15));
+}
 
 /* TODO: Добавете .element.noble-gas стилове тук */
-
-
-
+.element.noble-gas {
+   border-color: var(--noble-gas);
+   background: linear-gradient(135deg, var(--bg-dark), rgba(96, 165, 250, 0.15));
+}
 
 /* TODO: Добавете .element.alkali стилове тук */
-
-
-
+.element.alkali {
+   border-color: var(--alkali);
+   background: linear-gradient(135deg, var(--bg-dark), rgba(249, 115, 22, 0.15));
+}
 
 /* TODO: Добавете .element.alkaline стилове тук */
-
-
-
+.element.alkaline {
+   border-color: var(--alkaline);
+   background: linear-gradient(135deg, var(--bg-dark), rgba(134, 204, 22, 0.15));
+}
 
 /* TODO: Добавете .element.lanthanide стилове тук */
-
-
+.element.lanthanide {
+   border-color: var(--lanthanide);
+   background: linear-gradient(135deg, var(--bg-dark), rgba(7, 204, 204, 0.226));
+}
 
 /* TODO: Добавете .element.halogen стилове тук */
-
-
-
+.element.halogen {
+   border-color: var(--halogen);
+   background: linear-gradient(135deg, var(--bg-dark), rgba(204, 7, 7, 0.226));
+}
 
 /* TODO: Добавете .element.actinide стилове тук */
-
-
-
+.element.actinide {
+   border-color: var(--actinide);
+   background: linear-gradient(135deg, var(--bg-dark), rgba(0, 117, 10, 0.226));
+}
 
 
 /* ============================================
@@ -531,9 +527,14 @@ select:focus, input[type="text"]:focus {
 */
 
 /* TODO: Добавете .element-details стилове тук */
-
-
-
+.element-details {
+   background: var(--bg-card);
+   border: 1px solid var(--border-color);
+   border-radius: 15px;
+   padding: 30px;
+   margin-bottom: 40px;
+   position: relative;
+}
 
 /* Инструкции за .close-btn:
    - position: absolute
@@ -554,8 +555,23 @@ select:focus, input[type="text"]:focus {
 */
 
 /* TODO: Добавете .close-btn стилове тук */
-
-
+.close-btn {
+   position: absolute;
+   top: 15px;
+   right: 15px;
+   background: var(--accent-red);
+   color: white;
+   border: none;
+   border-radius: 50%;
+   width: 35px;
+   height: 35px;
+   font-size: 1.5rem;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
 
 
 /* СЕДМИЦА 10: TODO - Hover за .close-btn
@@ -564,9 +580,10 @@ select:focus, input[type="text"]:focus {
 */
 
 /* TODO: Добавете .close-btn:hover стилове тук */
-
-
-
+.close-btn:hover {
+   background: #dc2626;
+   transform: rotate(90deg);
+}
 
 /* Инструкции за .element-details h2:
    - color: var(--accent-blue)
@@ -575,9 +592,11 @@ select:focus, input[type="text"]:focus {
 */
 
 /* TODO: Добавете .element-details h2 стилове тук */
-
-
-
+.element-details h2 {
+   color: var(--accent-blue);
+   margin-bottom: 20px;
+   font-size: 2rem;
+}
 
 /* Инструкции за .detail-grid:
    - display: grid
@@ -587,9 +606,12 @@ select:focus, input[type="text"]:focus {
 */
 
 /* TODO: Добавете .detail-grid стилове тук */
-
-
-
+.detail-grid {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+   gap: 15px;
+   margin-bottom: 20px;
+}
 
 /* Инструкции за .detail-item:
    - background: var(--bg-dark)
@@ -599,9 +621,12 @@ select:focus, input[type="text"]:focus {
 */
 
 /* TODO: Добавете .detail-item стилове тук */
-
-
-
+.detail-item {
+   background: var(--bg-dark);
+   padding: 15px;
+   border-radius: 8px;
+   border: 1px solid var(--border-color);
+}
 
 /* Инструкции за .detail-label:
    - display: block
@@ -611,9 +636,12 @@ select:focus, input[type="text"]:focus {
 */
 
 /* TODO: Добавете .detail-label стилове тук */
-
-
-
+.detail-label {
+   display: block;
+   font-size: 0.85rem;
+   color: var(--text-secondary);
+   margin-bottom: 5px;
+}
 
 /* Инструкции за .detail-value:
    - display: block
@@ -623,9 +651,12 @@ select:focus, input[type="text"]:focus {
 */
 
 /* TODO: Добавете .detail-value стилове тук */
-
-
-
+.detail-value {
+   display: block;
+   font-size: 1.2rem;
+   font-weight: bold;
+   color: var(--accent-blue);
+}
 
 /* Инструкции за .detail-description:
    - background: var(--bg-dark)
@@ -636,8 +667,13 @@ select:focus, input[type="text"]:focus {
 */
 
 /* TODO: Добавете .detail-description стилове тук */
-
-
+.detail-description {
+   background: var(--bg-dark);
+   padding: 20px;
+   border-radius: 8px;
+   border-left: 4px solid var(--accent-blue);
+   line-height: 1.8;
+}
 
 
 /* ============================================
