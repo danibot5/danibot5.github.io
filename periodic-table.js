@@ -1360,14 +1360,14 @@ console.log(`✅ Зареде${elements.length} елемента`);
 */
 
 // TODO: Създайте глобалните променливи тук
-
-
-
-
-
-
-
+let currentFilter = 'all';
+let searchTerm = '';
+let quizActive = false;
+let currentQuizQuestion = 0;
+let quizScore = 0;
+let quizElements = [];
 console.log("✅ Глобалните променливи са създадени");
+
 
 // ============================================
 // СЕДМИЦА 5: TODO - DOM ЕЛЕМЕНТИ
@@ -1408,34 +1408,34 @@ const quizFeedbackEl = document.getElementById('quizFeedback');
 */
 
 // TODO: Свържете основните DOM елементи тук
-
-
-
-
-
-
-
-
+const periodicTableEl = document.getElementById('periodicTable');
+const filterTypeEl = document.getElementById('filterType');
+const searchInputEl = document.getElementById('searchInput');
+const visibleCountEl = document.getElementById('visibleCount');
+const elementDetailsEl = document.getElementById('elementDetails');
+const closeDetailsBtn = document.getElementById('closeDetails');
+const startQuizBtn = document.getElementById('startQuiz');
+const quizGameEl = document.getElementById('quizGame');
 
 // TODO: Свържете детайлните DOM елементи тук
-
-
-
-
-
-
-
-
+const detailName = document.getElementById('detailName');
+const detailNumber = document.getElementById('detailNumber');
+const detailSymbol = document.getElementById('detailSymbol');
+const detailMass = document.getElementById('detailMass');
+const detailCategory = document.getElementById('detailCategory');
+const detailPeriod = document.getElementById('detailPeriod');
+const detailGroup = document.getElementById('detailGroup');
+const detailDescription = document.getElementById('detailDescription');
 
 // TODO: Свържете викторина DOM елементи тук
-
-
-
-
-
-
-
-
+const quizQuestionEl = document.getElementById('quizQuestion');
+const quizScoreEl = document.getElementById('quizScore');
+const quizPromptEl = document.getElementById('quizPrompt');
+const quizElementNumberEl = document.getElementById('quizElementNumber');
+const quizElementSymbolEl = document.getElementById('quizElementSymbol');
+const quizElementNameEl = document.getElementById('quizElementName');
+const quizOptionsEl = document.getElementById('quizOptions');
+const quizFeedbackEl = document.getElementById('quizFeedback');
 
 console.log("✅ DOM елементите са свързани");
 
@@ -1494,45 +1494,47 @@ function renderPeriodicTable() {
    console.log("🎨 Рендериране на таблицата...");
 
    // TODO: Изчистете periodicTableEl
-
+   periodicTableEl.innerHTML = '';
 
    // TODO: Направете for цикъл през elements
+   for (let i = 0; i < elements.length; i++) {
 
 
-   // TODO: Вземете текущия елемент
+      // TODO: Вземете текущия елемент
+      const element = elements[i];
 
+      // TODO: Създайте div елемент
+      const elementDiv = document.createElement('div');
 
-   // TODO: Създайте div елемент
+      // TODO: Задайте className
+      elementDiv.className = 'element ' + element.category;
 
+      // TODO: Задайте gridRow и gridColumn
+      elementDiv.style.gridRow = element.position.row;
+      elementDiv.style.gridColumn = element.position.col;
 
-   // TODO: Задайте className
+      // TODO: Задайте dataset атрибути
+      elementDiv.dataset.number = element.number;
+      elementDiv.dataset.symbol = element.symbol;
+      elementDiv.dataset.name = element.name;
+      elementDiv.dataset.category = element.category;
 
+      // TODO: Задайте innerHTML
+      elementDiv.innerHTML = `
+      <div class="element-number">${element.number}</div>
+      <div class="element-symbol">${element.symbol}</div>
+      <div class="element-name">${element.name}</div>
+      <div class="element-mass">${element.mass}</div>
+    `;
 
-   // TODO: Задайте gridRow и gridColumn
+      // TODO: Добавете click event listener
+      elementDiv.addEventListener('click', function () {
+         showElementDetails(element);
+      });
 
-
-
-   // TODO: Задайте dataset атрибути
-
-
-
-
-
-   // TODO: Задайте innerHTML
-
-
-
-
-
-
-
-   // TODO: Добавете click event listener
-
-
-
-
-   // TODO: Добавете към periodicTableEl
-
+      // TODO: Добавете към periodicTableEl
+      periodicTableEl.appendChild(elementDiv);
+   }
 
    console.log("✅ Таблицата е рендерирана");
 }
@@ -1575,51 +1577,66 @@ function showElementDetails(element) {
    console.log("📋 Показване на детайли за:", element.name);
 
    // TODO: Попълнете detailName
-
+   detailName.textContent = element.name;
 
    // TODO: Попълнете detailNumber
-
+   detailNumber.textContent = element.number;
 
    // TODO: Попълнете detailSymbol
-
+   detailSymbol.textContent = element.symbol;
 
    // TODO: Попълнете detailMass
-
+   detailMass.textContent = element.mass;
 
    // TODO: Попълнете detailPeriod
-
+   detailPeriod.textContent = element.period;
 
    // TODO: Попълнете detailGroup
-
+   detailGroup.textContent = element.group;
 
    // TODO: Попълнете detailDescription
-
+   detailDescription.textContent = element.description;
 
    // TODO: Използвайте switch за detailCategory
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+   switch (element.category) {
+      case 'nonmetal':
+         detailCategory.textContent = 'Неметал';
+         break;
+      case 'transitionmetal':
+         detailCategory.textContent = 'Преходен метал';
+         break;
+      case 'post-transitionmetal':
+         detailCategory.textContent = 'Следпреходен метал';
+         break;
+      case 'metalloid':
+         detailCategory.textContent = 'Металоид';
+         break;
+      case 'noble-gas':
+         detailCategory.textContent = 'Благороден газ';
+         break;
+      case 'alkali metal':
+         detailCategory.textContent = 'Алкален метал';
+         break;
+      case 'alkaline':
+         detailCategory.textContent = 'Алкалоземен метал';
+         break;
+      case 'halogen':
+         detailCategory.textContent = 'Халоген';
+         break;
+      case 'lanthanide':
+         detailCategory.textContent = 'Лантаноид';
+         break;
+      case 'actinide':
+         detailCategory.textContent = 'Актиноид';
+         break;
+      default:
+         detailCategory.textContent = element.category;
+   }
 
    // TODO: Scroll до елемента
-
+   elementDetailsEl.scrollIntoView({ behavior: 'smooth' });
 }
+
 
 // ============================================
 // СЕДМИЦА 7: TODO - ФИЛТРИРАНЕ
@@ -1666,40 +1683,38 @@ function filterElements() {
    console.log("🔍 Филтриране...");
 
    // TODO: Вземете всички елементи
-
+   const allElements = document.querySelectorAll('.element');
 
    // TODO: Нулирайте visibleCount
-
+   let visibleCount = 0;
 
    // TODO: Направете for цикъл
+   for (let i = 0; i < allElements.length; i++) {
 
+      // TODO: Вземете текущия div
+      const elementDiv = allElements[i];
 
-   // TODO: Вземете текущия div
+      // TODO: Вземете category, name, symbol от dataset
+      const category = elementDiv.dataset.category;
+      const name = elementDiv.dataset.name.toLowerCase();
+      const symbol = elementDiv.dataset.symbol.toLowerCase();
 
+      // TODO: Проверете categoryMatch
+      const categoryMatch = (currentFilter === 'all' || category === currentFilter);
 
-   // TODO: Вземете category, name, symbol от dataset
+      // TODO: Проверете searchMatch  
+      const searchMatch = (searchTerm === '' || name.includes(searchTerm) || symbol.includes(searchTerm));
 
-
-
-
-   // TODO: Проверете categoryMatch
-
-
-   // TODO: Проверете searchMatch  
-
-
-   // TODO: Използвайте if-else за показване/скриване
-
-
-
-
-
-
-
-
-
+      // TODO: Използвайте if-else за показване/скриване
+      if (categoryMatch && searchMatch) {
+         elementDiv.classList.remove('hidden');
+         visibleCount++;
+      } else {
+         elementDiv.classList.add('hidden');
+      }
+   }
    // TODO: Обновете visibleCountEl
-
+   visibleCountEl.textContent = visibleCount;
 }
 
 // ============================================
@@ -1718,11 +1733,12 @@ function filterElements() {
 
 function updateVisibleCount() {
    // TODO: Вземете видимите елементи
-
+   const visible = document.querySelectorAll('.element:not(.hidden)');
 
    // TODO: Обновете текста
-
+   visibleCountEl.textContent = visible.length;
 }
+
 
 // ============================================
 // СЕДМИЦА 9: TODO - СТАРТ НА ВИКТОРИНА
@@ -1755,24 +1771,25 @@ function startQuiz() {
    console.log("🎮 Стартиране на викторина...");
 
    // TODO: Нулирайте променливите
-
-
-
+   quizActive = true;
+   currentQuizQuestion = 0;
+   quizScore = 0;
 
    // TODO: Вземете случайни елементи
-
+   quizElements = getRandomElements(10);
 
    // TODO: Обновете UI
-
-
+   quizScoreEl.textContent = '0';
+   quizQuestionEl.textContent = '1';
 
    // TODO: Покажете викторината
-
-
+   startQuizBtn.style.display = 'none';
+   quizGameEl.style.display = 'block';
 
    // TODO: Покажете първия въпрос
-
+   showQuizQuestion();
 }
+
 
 // ============================================
 // СЕДМИЦА 9: TODO - СЛУЧАЙНИ ЕЛЕМЕНТИ
@@ -1798,19 +1815,20 @@ function startQuiz() {
 
 function getRandomElements(count) {
    // TODO: Създайте копие на elements
-
+   const shuffled = [...elements];
 
    // TODO: Разбъркайте с Fisher-Yates
-
-
-
-
-
-
+   for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      const temp = shuffled[i];
+      shuffled[i] = shuffled[j];
+      shuffled[j] = temp;
+   }
 
    // TODO: Върнете първите count елемента
-
+   return shuffled.slice(0, count);
 }
+
 
 // ============================================
 // СЕДМИЦА 9: TODO - ПОКАЗВАНЕ НА ВЪПРОС
@@ -2288,27 +2306,29 @@ function attachEventListeners() {
    console.log("🎧 Добавяне на event listeners...");
 
    // TODO: Добавете change event за filterTypeEl
-
-
-
-
+   filterTypeEl.addEventListener('change', function (e) {
+      currentFilter = e.target.value;
+      filterElements();
+   });
 
    // TODO: Добавете input event за searchInputEl
-
-
-
-
+   searchInputEl.addEventListener('input', function (e) {
+      searchTerm = e.target.value.toLowerCase();
+      filterElements();
+   });
 
    // TODO: Добавете click event за closeDetailsBtn
-
-
-
+   closeDetailsBtn.addEventListener('click', function () {
+      closeElementDetails();
+      elementDetailsEl.scrollIntoView({ behavior: 'smooth' });
+   });
 
    // TODO: Добавете click event за startQuizBtn
-
+   startQuizBtn.addEventListener('click', startQuiz);
 
    console.log("✅ Event listeners са добавени");
 }
+
 
 // ============================================
 // СЕДМИЦА 8: TODO - ИНИЦИАЛИЗАЦИЯ

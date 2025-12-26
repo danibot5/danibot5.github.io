@@ -5,7 +5,8 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Интерактивна Периодична Таблица</title>
-
+   
+   
    <!-- 
     ============================================
     СЕДМИЦА 2: TODO - Свържете CSS файла
@@ -17,12 +18,13 @@
     -->
 
    <!-- TODO: Свържете CSS файла тук -->
-   <link rel="stylesheet" href="periodic-table-skeleton.css">
+   <link rel="stylesheet" href="periodic-table.css">
 
 </head>
 
 <body>
    <div class="container">
+
 
       <!-- 
         ============================================
@@ -39,6 +41,7 @@
          <h1>🧪 Интерактивна Периодична Таблица</h1>
          <p class="subtitle">Изучавай химичните елементи играйки</p>
       </header>
+
 
       <!-- 
         ============================================
@@ -68,7 +71,7 @@
         В) СТАТИСТИКИ:
         - div с class="stats"
         - span с текст "Показани: "
-        - strong id="visibleCount" с текст "0"
+        - strong id="visibleCount" с текст "118"
         - span с текст " / 118"
         -->
 
@@ -79,11 +82,14 @@
             <select name="" id="filterType">
                <option value="all">Всички елементи</option>
                <option value="nonmetal">Неметали</option>
-               <option value="metal">Метали</option>
+               <option value="transitionmetal">Преходни метали</option>
+               <option value="post-transitionmetal">Следпреходни метали</option>
+               <option value="alkali metal">Алкални метали</option>
+               <option value="alkaline">Алкалоземни метали</option>
                <option value="metalloid">Металоиди</option>
                <option value="noble-gas">Благородни газове</option>
-               <option value="alkali">Алкални метали</option>
-               <option value="alkaline">Алкалоземни метали</option>
+               <option value="lanthanide">Лантаноид</option>
+               <option value="actinide">Актиноид</option>
             </select>
          </div>
          <div class="search-section">
@@ -92,10 +98,11 @@
          </div>
          <div class="stats">
             <span>Показани: </span>
-            <strong id="visibleCount">0</strong>
+            <strong id="visibleCount">118</strong>
             <span> / 118</span>
          </div>
       </div>
+
 
       <!-- 
         ============================================
