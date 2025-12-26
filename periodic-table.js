@@ -2306,27 +2306,29 @@ function attachEventListeners() {
    console.log("🎧 Добавяне на event listeners...");
 
    // TODO: Добавете change event за filterTypeEl
-
-
-
-
+   filterTypeEl.addEventListener('change', function (e) {
+      currentFilter = e.target.value;
+      filterElements();
+   });
 
    // TODO: Добавете input event за searchInputEl
-
-
-
-
+   searchInputEl.addEventListener('input', function (e) {
+      searchTerm = e.target.value.toLowerCase();
+      filterElements();
+   });
 
    // TODO: Добавете click event за closeDetailsBtn
-
-
-
+   closeDetailsBtn.addEventListener('click', function () {
+      closeElementDetails();
+      elementDetailsEl.scrollIntoView({ behavior: 'smooth' });
+   });
 
    // TODO: Добавете click event за startQuizBtn
-
+   startQuizBtn.addEventListener('click', startQuiz);
 
    console.log("✅ Event listeners са добавени");
 }
+
 
 // ============================================
 // СЕДМИЦА 8: TODO - ИНИЦИАЛИЗАЦИЯ
