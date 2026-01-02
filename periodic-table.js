@@ -1875,43 +1875,40 @@ function getRandomElements(count) {
 
 function showQuizQuestion() {
    // TODO: Проверете дали викторината е завършена
-
-
-
-
+   if (currentQuizQuestion >= quizElements.length) {
+      showQuizResults();
+      return;
+   }
 
    // TODO: Вземете текущия елемент
-
+   const element = quizElements[currentQuizQuestion];
 
    // TODO: Обновете quizQuestionEl
-
+   quizQuestionEl.textContent = currentQuizQuestion + 1;
 
    // TODO: Изчистете feedback
-
-
+   quizFeedbackEl.textContent = '';
+   quizFeedbackEl.className = 'quiz-feedback';
 
    // TODO: Изберете тип въпрос
-
+   const questionType = Math.random() < 0.5 ? 'symbol' : 'name';
 
    // TODO: Използвайте if-else за двата типа
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+   if (questionType === 'symbol') {
+      quizPromptEl.textContent = 'Какъв е символът на този елемент?';
+      quizElementNumberEl.textContent = element.number;
+      quizElementSymbolEl.textContent = '?';
+      quizElementNameEl.textContent = element.name;
+      const options = generateSymbolOptions(element);
+      renderQuizOptions(options, element.symbol);
+   } else {
+      quizPromptEl.textContent = 'Кой е този елемент?';
+      quizElementNumberEl.textContent = element.number;
+      quizElementSymbolEl.textContent = element.symbol;
+      quizElementNameEl.textContent = '?';
+      const options = generateNameOptions(element);
+      renderQuizOptions(options, element.name);
+   }
 }
 
 // ============================================
@@ -1938,18 +1935,18 @@ function showQuizQuestion() {
 
 function generateSymbolOptions(correctElement) {
    // TODO: Създайте масив с правилния отговор
-
+   const options = [correctElement.symbol];
 
    // TODO: Добавете 3 грешни опции
-
-
-
-
-
-
+   while (options.length < 4) {
+      const randomElement = elements[Math.floor(Math.random() * elements.length)];
+      if (!options.includes(randomElement.symbol)) {
+         options.push(randomElement.symbol);
+      }
+   }
 
    // TODO: Разбъркайте и върнете
-
+   return shuffleArray(options);
 }
 
 /*
@@ -1959,18 +1956,18 @@ function generateSymbolOptions(correctElement) {
 
 function generateNameOptions(correctElement) {
    // TODO: Създайте масив с правилния отговор
-
+   const options = [correctElement.name];
 
    // TODO: Добавете 3 грешни опции
-
-
-
-
-
-
+   while (options.length < 4) {
+      const randomElement = elements[Math.floor(Math.random() * elements.length)];
+      if (!options.includes(randomElement.name)) {
+         options.push(randomElement.name);
+      }
+   }
 
    // TODO: Разбъркайте и върнете
-
+   return shuffleArray(options);
 }
 
 /*
@@ -1991,18 +1988,18 @@ function generateNameOptions(correctElement) {
 
 function shuffleArray(array) {
    // TODO: Създайте копие
-
+   const shuffled = [...array];
 
    // TODO: Разбъркайте
-
-
-
-
-
-
+   for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      const temp = shuffled[i];
+      shuffled[i] = shuffled[j];
+      shuffled[j] = temp;
+   }
 
    // TODO: Върнете
-
+   return shuffled;
 }
 
 // ============================================
@@ -2032,29 +2029,28 @@ function shuffleArray(array) {
 
 function renderQuizOptions(options, correctAnswer) {
    // TODO: Изчистете quizOptionsEl
-
+   quizOptionsEl.innerHTML = '';
 
    // TODO: Направете for цикъл
+   for (let i = 0; i < options.length; i++) {
 
+      // TODO: Създайте div
+      const optionDiv = document.createElement('div');
 
-   // TODO: Създайте div
+      // TODO: Задайте className
+      optionDiv.className = 'quiz-option';
 
+      // TODO: Задайте textContent
+      optionDiv.textContent = options[i];
 
-   // TODO: Задайте className
+      // TODO: Добавете click event
+      optionDiv.addEventListener('click', function () {
+         checkAnswer(options[i], correctAnswer, optionDiv);
+      });
 
-
-   // TODO: Задайте textContent
-
-
-   // TODO: Добавете click event
-
-
-
-
-   // TODO: Добавете към quizOptionsEl
-
-
-
+      // TODO: Добавете към quizOptionsEl
+      quizOptionsEl.appendChild(optionDiv);
+   }
 }
 
 // ============================================
@@ -2063,15 +2059,15 @@ function renderQuizOptions(options, correctAnswer) {
 
 /*
 Инструкции за функция checkAnswer(selectedAnswer, correctAnswer, optionDiv):
-
+ 
 1. Вземете всички опции:
    const allOptions = document.querySelectorAll('.quiz-option');
-
+ 
 2. Блокирайте всички опции:
    for (let i = 0; i < allOptions.length; i++) {
        allOptions[i].style.pointerEvents = 'none';
    }
-
+ 
 3. Проверете с if-else:
    if (selectedAnswer === correctAnswer) {
        // Правилен отговор
@@ -2092,10 +2088,10 @@ function renderQuizOptions(options, correctAnswer) {
            }
        }
    }
-
+ 
 4. Обновете точките:
    quizScoreEl.textContent = quizScore;
-
+ 
 5. След 2 секунди - следващ въпрос:
    setTimeout(function() {
        currentQuizQuestion++;
@@ -2105,46 +2101,44 @@ function renderQuizOptions(options, correctAnswer) {
 
 function checkAnswer(selectedAnswer, correctAnswer, optionDiv) {
    // TODO: Вземете всички опции
-
+   const allOptions = document.querySelectorAll('.quiz-option');
 
    // TODO: Блокирайте всички опции
-
-
-
+   for (let i = 0; i < allOptions.length; i++) {
+      allOptions[i].style.pointerEvents = 'none';
+   }
 
    // TODO: Проверете с if-else
+   if (selectedAnswer === correctAnswer) {
 
+      // TODO: Правилен отговор
+      optionDiv.classList.add('correct');
+      quizFeedbackEl.className = 'quiz-feedback correct';
+      quizFeedbackEl.textContent = '✓ Браво! Верен отговор!';
+      quizScore++;
+   } else {
 
-   // TODO: Правилен отговор
+      // TODO: Грешен отговор
+      optionDiv.classList.add('incorrect');
+      quizFeedbackEl.className = 'quiz-feedback incorrect';
+      quizFeedbackEl.textContent = '✗ Грешка! Верният отговор е: ' + correctAnswer;
 
-
-
-
-
-
-
-   // TODO: Грешен отговор
-
-
-
-
-
-   // TODO: Оцветете правилния отговор
-
-
-
-
-
-
-
+      // TODO: Оцветете правилния отговор
+      for (let i = 0; i < allOptions.length; i++) {
+         if (allOptions[i].textContent === correctAnswer) {
+            allOptions[i].classList.add('correct');
+         }
+      }
+   }
 
    // TODO: Обновете quizScoreEl
-
+   quizScoreEl.textContent = quizScore;
 
    // TODO: След 2 секунди - следващ въпрос
-
-
-
+   setTimeout(function () {
+      currentQuizQuestion++;
+      showQuizQuestion();
+   }, 2000);
 
 }
 
@@ -2154,18 +2148,18 @@ function checkAnswer(selectedAnswer, correctAnswer, optionDiv) {
 
 /*
 Инструкции за функция showQuizResults():
-
+ 
 1. Изчистете опциите: quizOptionsEl.innerHTML = '';
-
+ 
 2. Променете текста:
    quizPromptEl.textContent = 'Викторината завърши!';
    quizElementNumberEl.textContent = '';
    quizElementSymbolEl.textContent = '🎉';
    quizElementNameEl.textContent = '';
-
+ 
 3. Изчислете процент:
    const percentage = (quizScore / quizElements.length) * 100;
-
+ 
 4. Изберете съобщение с if-else:
    let message = '';
    if (percentage === 100) {
@@ -2177,7 +2171,7 @@ function checkAnswer(selectedAnswer, correctAnswer, optionDiv) {
    } else {
        message = '📚 Трябва повече да практикуваш!';
    }
-
+ 
 5. Покажете резултата:
    quizFeedbackEl.className = 'quiz-feedback correct';
    quizFeedbackEl.innerHTML = `
@@ -2189,37 +2183,36 @@ function checkAnswer(selectedAnswer, correctAnswer, optionDiv) {
 
 function showQuizResults() {
    // TODO: Изчистете quizOptionsEl
-
+   quizOptionsEl.innerHTML = '';
 
    // TODO: Променете текстовете
-
-
-
-
+   quizPromptEl.textContent = 'Викторината завърши!';
+   quizElementNumberEl.textContent = '';
+   quizElementSymbolEl.textContent = '🎉';
+   quizElementNameEl.textContent = '';
 
    // TODO: Изчислете процента
-
+   const percentage = (quizScore / quizElements.length) * 100;
 
    // TODO: Изберете съобщение с if-else
-
-
-
-
-
-
-
-
-
-
-
+   let message = '';
+   if (percentage === 100) {
+      message = '🏆 Перфектен резултат!';
+   } else if (percentage >= 80) {
+      message = '⭐ Отлично!';
+   } else if (percentage >= 60) {
+      message = '👍 Добър резултат!';
+   } else {
+      message = '📚 Трябва повече да практикуваш!';
+   }
 
    // TODO: Покажете резултата
-
-
-
-
-
-
+   quizFeedbackEl.className = 'quiz-feedback correct';
+   quizFeedbackEl.innerHTML = `
+    <div style="font-size: 1.5rem; margin-bottom: 15px;">${message}</div>
+    <div>Точки: ${quizScore} / ${quizElements.length} (${percentage.toFixed(0)}%)</div>
+    <button class="btn-primary" style="margin-top: 20px;" onclick="resetQuiz()">Нова викторина</button>
+  `;
 }
 
 // ============================================
@@ -2228,10 +2221,10 @@ function showQuizResults() {
 
 /*
 Инструкции за функция resetQuiz():
-
+ 
 1. Нулирайте променливите:
    quizActive = false;
-
+ 
 2. Скрийте викторината:
    quizGameEl.style.display = 'none';
    startQuizBtn.style.display = 'block';
@@ -2239,18 +2232,18 @@ function showQuizResults() {
 
 function resetQuiz() {
    // TODO: Нулирайте quizActive
-
+   quizActive = false;
 
    // TODO: Скрийте викторината
-
-
+   quizGameEl.style.display = 'none';
+   startQuizBtn.style.display = 'block';
 }
 
 // ============================================
 // СЕДМИЦА 8: TODO - EVENT LISTENERS
 // ============================================
-
-/* Инструкции за функция closeElementDetails():
+/*
+Инструкции за функция closeElementDetails():
  
 1. Взимане на id:
    document.getElementById('detailName').textContent = 'Изберете елемент';
@@ -2263,41 +2256,39 @@ function resetQuiz() {
    document.getElementById('detailDescription').textContent = 
    'Изберете елемент от таблицата за да видите детайли.';
 */
-
 function closeElementDetails() {
    // TODO: Добавете кода за функцията тук
-
-
-
-
-
-
-
-
-
+   document.getElementById('detailName').textContent = 'Изберете елемент';
+   document.getElementById('detailNumber').textContent = '-';
+   document.getElementById('detailSymbol').textContent = '-';
+   document.getElementById('detailMass').textContent = '-';
+   document.getElementById('detailCategory').textContent = '-';
+   document.getElementById('detailPeriod').textContent = '-';
+   document.getElementById('detailGroup').textContent = '-';
+   document.getElementById('detailDescription').textContent =
+      'Изберете елемент от таблицата за да видите детайли.';
 }
 
 /*
 Инструкции за функция attachEventListeners():
-
+ 
 1. Филтър:
    filterTypeEl.addEventListener('change', function(e) {
        currentFilter = e.target.value;
        filterElements();
    });
-
+ 
 2. Търсене:
    searchInputEl.addEventListener('input', function(e) {
        searchTerm = e.target.value.toLowerCase();
        filterElements();
    });
-
+ 
 3. Затваряне на детайли:
    closeDetailsBtn.addEventListener('click', function() {
-      closeElementDetails();
-      elementDetailsEl.scrollIntoView({ behavior: 'smooth' });
+       elementDetailsEl.scrollIntoView({ behavior: 'smooth' });
    });
-
+ 
 4. Старт на викторина:
    startQuizBtn.addEventListener('click', startQuiz);
 */
@@ -2329,17 +2320,16 @@ function attachEventListeners() {
    console.log("✅ Event listeners са добавени");
 }
 
-
 // ============================================
 // СЕДМИЦА 8: TODO - ИНИЦИАЛИЗАЦИЯ
 // ============================================
 
 /*
 Инструкции за функция init():
-
+ 
 1. Рендерирайте таблицата:
    renderPeriodicTable();
-
+ 
 2. Добавете event listeners:
    attachEventListeners();
 */
@@ -2348,10 +2338,10 @@ function init() {
    console.log("🚀 Инициализация...");
 
    // TODO: Рендерирайте таблицата
-
+   renderPeriodicTable();
 
    // TODO: Добавете event listeners
-
+   attachEventListeners();
 
    console.log("✅ Приложението е готово!");
 }
