@@ -95,7 +95,7 @@
 /* TODO: Добавете body стилове тук */
 body {
    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   background: linear-gradient(135deg, var(--bg-dark) 0% #1a1f3a 100%);
+   background: linear-gradient(135deg, var(--bg-dark) 0%, #1a1f3a 100%);
    color: var(--text-primary);
    min-height: 100vh;
    padding: 20px;
