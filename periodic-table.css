@@ -438,7 +438,7 @@ input[type="text"]:focus {
    ============================================
    Инструкции за .element.nonmetal:
    - border-color: var(--nonmetal)
-   - background: linear-gradient(135deg, var(--bg-dark), #1e90ff15)
+   - background: linear-gradient(135deg, var(--bg-dark), var(--nonmetal) 250%);
    
    Подобни стилове за:
    .element.transitionmetal (--transitionmetal)
@@ -1062,7 +1062,7 @@ input[type="text"]:focus {
    Използвайте същите цветове като за елементите
    
    .legend-box.nonmetal:
-   - background: #1e90ff15
+   - background: linear-gradient(135deg, var(--bg-dark), var(--nonmetal) 250%)
    - border-color: var(--nonmetal)
    
    Подобни за: transitionmetal, post-transitionmetal, metalloid, noble-gas, alkali, alkaline, halogen, lanthanide, actinide
