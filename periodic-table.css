@@ -13,28 +13,27 @@
    Инструкции за :root секция:
    
    Създайте CSS променливи за цветове:
-   --bg-dark: #0a0e27
-   --bg-card: #1a1f3a
-   --bg-hover: #2a2f4a
-   --text-primary: #ffffff
-   --text-secondary: #b8c1ec
-   --accent-blue: #4f6aff
-   --accent-purple: #8b5cf6
-   --accent-green: #10b981
-   --accent-red: #ef4444
-   --border-color: #2d3561
-   
-   Цветове за категории:
-   --nonmetal: #ff6b9d
-   --transitionmetal: #fffc4a
-   --post-transitionmetal: #e0a100
-   --halogen: #ff004c
-   --metalloid: #a78bfa
-   --noble-gas: #60a5fa
-   --alkali: #f97316
-   --alkaline: #84cc16
-   --lanthanide: #00ffff
-   --actinide: #00670c
+   --bg-dark: #0f172a;
+   --bg-card: #1e293b;
+   --bg-hover: #334155;
+   --text-primary: #f1f5f9;
+   --text-secondary: #94a3b8;
+   --border-color: #334155;
+   --accent-blue: #38bdf8;
+   --accent-purple: #818cf8;
+   --accent-green: #4ade80;
+   --accent-red: #f87171;
+
+   --alkali: #ff4757;
+   --alkaline: #ffa502;
+   --transitionmetal: #eccc68;
+   --post-transitionmetal: #ff7f50;
+   --metalloid: #2ed573;
+   --nonmetal: #1e90ff;       
+   --halogen: #3742fa;    
+   --noble-gas: #a55eea;
+   --lanthanide: #ff6b81;
+   --actinide: #7bed9f;
 */
 
 /* TODO: Създайте :root с променливи тук */
@@ -439,7 +438,7 @@ input[type="text"]:focus {
    ============================================
    Инструкции за .element.nonmetal:
    - border-color: var(--nonmetal)
-   - background: linear-gradient(135deg, var(--bg-dark), rgba(255, 107, 157, 0.15))
+   - background: linear-gradient(135deg, var(--bg-dark), #1e90ff15)
    
    Подобни стилове за:
    .element.transitionmetal (--transitionmetal)
@@ -1063,7 +1062,7 @@ input[type="text"]:focus {
    Използвайте същите цветове като за елементите
    
    .legend-box.nonmetal:
-   - background: rgba(255, 107, 157, 0.3)
+   - background: #1e90ff15
    - border-color: var(--nonmetal)
    
    Подобни за: transitionmetal, post-transitionmetal, metalloid, noble-gas, alkali, alkaline, halogen, lanthanide, actinide
