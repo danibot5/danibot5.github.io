@@ -66,11 +66,6 @@ git clone https://github.com/your-repo-link
 2️⃣ Open in browser
 Just open index.html in any browser.
 
-3️⃣ Or view online
-
-(when deployed to GitHub Pages)
-https://yourusername.github.io/periodic-table/
-
 ✅ Completed Features Checklist
 
  HTML structure
