@@ -38,27 +38,27 @@
 
 /* TODO: Създайте :root с променливи тук */
 :root {
-   --bg-dark: #0a0e27;
-   --bg-card: #1a1f3a;
-   --bg-hover: #2a2f4a;
-   --text-primary: #ffffff;
-   --text-secondary: #b8c1ec;
-   --accent-blue: #4f6aff;
-   --accent-purple: #8b5cf6;
-   --accent-green: #10b981;
-   --accent-red: #ef4444;
-   --border-color: #2d3561;
+   --bg-dark: #0f172a;
+   --bg-card: #1e293b;
+   --bg-hover: #334155;
+   --text-primary: #f1f5f9;
+   --text-secondary: #94a3b8;
+   --border-color: #334155;
+   --accent-blue: #38bdf8;
+   --accent-purple: #818cf8;
+   --accent-green: #4ade80;
+   --accent-red: #f87171;
 
-   --nonmetal: #ff6b9d;
-   --halogen: #ff004c;
-   --transitionmetal: #fffc4a;
-   --post-transitionmetal: #e0a100;
-   --metalloid: #9375eb;
-   --noble-gas: #60a5fa;
-   --alkali: #f95e16;
-   --alkaline: #9dee08;
-   --lanthanide: #00ffff;
-   --actinide: #00670c;
+   --alkali: #ff3a4b;
+   --alkaline: #ffa600;
+   --transitionmetal: #ece368;
+   --post-transitionmetal: #ff723f;
+   --metalloid: #1de459;
+   --nonmetal: #55aaff;       
+   --halogen: #3742fa;    
+   --noble-gas: #a55eea;
+   --lanthanide: #ff92a3;
+   --actinide: #65efb5;
 }
 
 
@@ -353,7 +353,7 @@ input[type="text"]:focus {
 
 /* TODO: Добавете .element:hover стилове тук */
 .element:hover {
-   transform: translateY(-5px) scale(1.05);
+   transform: translateY(-1.5px) scale(1.1);
    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
    z-index: 10;
 }
@@ -455,61 +455,61 @@ input[type="text"]:focus {
 /* TODO: Добавете .element.nonmetal стилове тук */
 .element.nonmetal {
    border-color: var(--nonmetal);
-   background: linear-gradient(135deg, var(--bg-dark), rgba(255, 107, 157, 0.15));
+   background: linear-gradient(135deg, var(--bg-dark), var(--nonmetal) 250%);
 }
 
 /* TODO: Добавете .element.transitionmetal стилове тук */
 .element.transitionmetal {
    border-color: var(--transitionmetal);
-   background: linear-gradient(135deg, var(--bg-dark), rgba(252, 255, 48, 0.15));
+   background: linear-gradient(135deg, var(--bg-dark), var(--transitionmetal) 250%);
 }
 
 /* TODO: Добавете .element.post-transitionmetal стилове тук */
 .element.post-transitionmetal {
    border-color: var(--post-transitionmetal);
-   background: linear-gradient(135deg, var(--bg-dark), rgba(214, 154, 1, 0.274));
+   background: linear-gradient(135deg, var(--bg-dark), var(--post-transitionmetal) 250%);
 }
 
 /* TODO: Добавете .element.metalloid стилове тук */
 .element.metalloid {
    border-color: var(--metalloid);
-   background: linear-gradient(135deg, var(--bg-dark), rgba(167, 139, 250, 0.15));
+   background: linear-gradient(135deg, var(--bg-dark), var(--metalloid) 250%);
 }
 
 /* TODO: Добавете .element.noble-gas стилове тук */
 .element.noble-gas {
    border-color: var(--noble-gas);
-   background: linear-gradient(135deg, var(--bg-dark), rgba(96, 165, 250, 0.15));
+   background: linear-gradient(135deg, var(--bg-dark), var(--noble-gas) 250%);
 }
 
 /* TODO: Добавете .element.alkali стилове тук */
 .element.alkali {
    border-color: var(--alkali);
-   background: linear-gradient(135deg, var(--bg-dark), rgba(249, 115, 22, 0.15));
+   background: linear-gradient(135deg, var(--bg-dark), var(--alkali) 250%);
 }
 
 /* TODO: Добавете .element.alkaline стилове тук */
 .element.alkaline {
    border-color: var(--alkaline);
-   background: linear-gradient(135deg, var(--bg-dark), rgba(134, 204, 22, 0.15));
+   background: linear-gradient(135deg, var(--bg-dark), var(--alkaline) 250%);
 }
 
 /* TODO: Добавете .element.lanthanide стилове тук */
 .element.lanthanide {
    border-color: var(--lanthanide);
-   background: linear-gradient(135deg, var(--bg-dark), rgba(7, 204, 204, 0.226));
+   background: linear-gradient(135deg, var(--bg-dark), var(--lanthanide) 250%);
 }
 
 /* TODO: Добавете .element.halogen стилове тук */
 .element.halogen {
    border-color: var(--halogen);
-   background: linear-gradient(135deg, var(--bg-dark), rgba(204, 7, 7, 0.226));
+   background: linear-gradient(135deg, var(--bg-dark), var(--halogen) 250%);
 }
 
 /* TODO: Добавете .element.actinide стилове тук */
 .element.actinide {
    border-color: var(--actinide);
-   background: linear-gradient(135deg, var(--bg-dark), rgba(0, 117, 10, 0.226));
+   background: linear-gradient(135deg, var(--bg-dark), var(--actinide) 250%);
 }
 
 
@@ -703,7 +703,7 @@ input[type="text"]:focus {
 /* TODO: Добавете .quiz-section h2 стилове тук */
 .quiz-section h2 {
    font-size: 1.8rem;
-   color: var(--accent-purple);
+   color: var(--accent-blue);
    margin-bottom: 20px;
 }
 
@@ -1070,85 +1070,61 @@ input[type="text"]:focus {
 
 /* TODO: Добавете .legend-box.nonmetal стилове тук */
 .legend-box.nonmetal {
-   background: rgba(255, 107, 157, 0.3);
+   background: linear-gradient(135deg, var(--bg-dark), var(--nonmetal) 250%);
    border-color: var(--nonmetal);
 }
 
-
-
 /* TODO: Добавете .legend-box.transitionmetal стилове тук */
 .legend-box.transitionmetal {
-   background: rgba(255, 252, 74, 0.3);
+   background: linear-gradient(135deg, var(--bg-dark), var(--transitionmetal) 250%);
    border-color: var(--transitionmetal);
 }
 
-
-
 /* TODO: Добавете .legend-box.post-transitionmetal стилове тук */
 .legend-box.post-transitionmetal {
-   background: rgba(224, 161, 0, 0.3);
+   background: linear-gradient(135deg, var(--bg-dark), var(--post-transitionmetal) 250%);
    border-color: var(--post-transitionmetal);
 }
 
-
-
 /* TODO: Добавете .legend-box.metalloid стилове тук */
 .legend-box.metalloid {
-   background: rgba(167, 139, 250, 0.3);
+   background: linear-gradient(135deg, var(--bg-dark), var(--metalloid) 250%);
    border-color: var(--metalloid);
 }
 
-
-
-
 /* TODO: Добавете .legend-box.noble-gas стилове тук */
 .legend-box.noble-gas {
-   background: rgba(96, 165, 250, 0.3);
+   background: linear-gradient(135deg, var(--bg-dark), var(--noble-gas) 250%);
    border-color: var(--noble-gas);
 }
 
-
-
-
 /* TODO: Добавете .legend-box.alkali стилове тук */
 .legend-box.alkali {
-   background: rgba(249, 115, 22, 0.3);
+   background: linear-gradient(135deg, var(--bg-dark), var(--alkali) 250%);
    border-color: var(--alkali);
 }
 
-
-
-
 /* TODO: Добавете .legend-box.alkaline стилове тук */
 .legend-box.alkaline {
-   background: rgba(132, 204, 22, 0.3);
+   background: linear-gradient(135deg, var(--bg-dark), var(--alkaline) 250%);
    border-color: var(--alkaline);
 }
 
-
-
-
 /* TODO: Добавете .legend-box.halogen стилове тук */
 .legend-box.halogen {
-   background: rgba(255, 0, 76, 0.3);
+   background: linear-gradient(135deg, var(--bg-dark), var(--halogen) 250%);
    border-color: var(--halogen);
 }
 
-
-
-
 /* TODO: Добавете .legend-box.lanthanide стилове тук */
 .legend-box.lanthanide {
-   background: rgba(0, 255, 255, 0.3);
+   background: linear-gradient(135deg, var(--bg-dark), var(--lanthanide) 250%);
    border-color: var(--lanthanide);
 }
 
-
-
-
 /* TODO: Добавете .legend-box.actinide стилове тук */
 .legend-box.actinide {
-   background: rgba(0, 103, 12, 0.3);
+   background: linear-gradient(135deg, var(--bg-dark), var(--actinide) 250%);
    border-color: var(--actinide);
 }
 
